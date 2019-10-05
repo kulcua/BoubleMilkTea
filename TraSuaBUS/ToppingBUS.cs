@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TraSuaDAL;
+using TraSuaDTO;
 
 namespace TraSuaBUS
 {
     class ToppingBUS
     {
-        private ToppingBUS toppingDal;
+        private ToppingDAL toppingDal;
         public ToppingBUS()
         {
             toppingDal = new ToppingDAL();

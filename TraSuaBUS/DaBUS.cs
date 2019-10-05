@@ -8,9 +8,9 @@ using TraSuaDTO;
 
 namespace TraSuaBUS
 {
-    class DaBUS
+    public class DaBUS
     {
-        private DaBUS daDal;
+        private DaDAL daDal;
         public DaBUS()
         {
             daDal = new DaDAL();

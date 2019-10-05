@@ -3,31 +3,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TraSuaDAL;
+using TraSuaDTO;
 
 namespace TraSuaBUS
 {
     public class NhanVienBUS
     {
-        private NhanVienBUS NhanvienDal;
+        private NhanVienDAL NhanvienDal;
         public NhanVienBUS()
         {
-            NhanvienDal = new NhanvienDAL();
+            NhanvienDal = new NhanVienDAL();
         }
 
-        public bool them(NhanvienDTO nv)
+        public bool them(NhanVienDTO nv)
         {
             bool re = NhanvienDal.them(nv);
             return re;
         }
 
-        public bool xoa(NhanvienDTO nv)
+        public bool xoa(NhanVienDTO nv)
         {
             bool re = NhanvienDal.xoa(nv);
             return re;
         }
 
 
-        public bool sua(NhanvienDTO nv)
+        public bool sua(NhanVienDTO nv)
         {
             bool re = NhanvienDal.sua(nv);
             return re;

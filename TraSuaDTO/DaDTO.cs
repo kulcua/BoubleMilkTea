@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TraSuaDTO
 {
-    class DaDTO
+    public class DaDTO
     {
         private int mada;
         private string da;

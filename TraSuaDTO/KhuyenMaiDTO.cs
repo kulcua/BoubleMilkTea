@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TraSuaDTO
 {
-    class KhuyenMaiDTO
+    public class KhuyenMaiDTO
     {
     }
 }

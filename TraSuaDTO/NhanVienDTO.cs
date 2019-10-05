@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TraSuaDTO
 {
-    class NhanVienDTO
+    public class NhanVienDTO
     {
         private int manv;
         private string tennv;

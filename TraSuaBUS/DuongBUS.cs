@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using TraSuaDAL;
+using TraSuaDTO;
 namespace TraSuaBUS
 {
-    class DuongBUS
+    public class DuongBUS
     {
-        private DuongBUS duongDal;
+        private DuongDAL duongDal;
         public DuongBUS()
         {
             duongDal = new DuongDAL();

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TraSuaDTO
 {
-    class ToppingDTO
+    public class ToppingDTO
     {
         private int matopping;
         private string topping;

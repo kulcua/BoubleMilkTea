@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TraSuaDTO
 {
-    class OrderDTO
+    public class OrderDTO
     {
         private int maorder;
         private int manv;

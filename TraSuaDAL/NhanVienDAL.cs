@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TraSuaDAL
 {
-    class NhanVienDAL
+    public class NhanVienDAL
     {
     }
 }

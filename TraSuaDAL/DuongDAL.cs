@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TraSuaDAL
 {
-    class DuongDAL
+    public class DuongDAL
     {
     }
 }

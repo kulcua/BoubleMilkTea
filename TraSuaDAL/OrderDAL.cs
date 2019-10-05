@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TraSuaDAL
 {
-    class OrderDAL
+    public class OrderDAL
     {
     }
 }

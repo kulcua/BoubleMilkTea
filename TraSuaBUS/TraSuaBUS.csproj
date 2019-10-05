@@ -56,6 +56,10 @@
       <Project>{AD5D188A-CDDF-4F84-85C5-B9D428818B59}</Project>
       <Name>TraSuaDAL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TraSuaDTO\TraSuaDTO.csproj">
+      <Project>{EC573067-99D3-4D0D-A756-DDD24FEA6E1D}</Project>
+      <Name>TraSuaDTO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
