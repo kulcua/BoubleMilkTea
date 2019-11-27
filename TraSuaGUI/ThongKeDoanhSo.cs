@@ -10,11 +10,12 @@ using System.Windows.Forms;
 
 namespace BoubleMilkTea
 {
-    public partial class Customize : Form
+    public partial class ThongKeDoanhSo : Form
     {
-        public Customize()
+        public ThongKeDoanhSo()
         {
             InitializeComponent();
         }
+
     }
 }

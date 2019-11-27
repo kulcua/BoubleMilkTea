@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BoubleMilkTea
 {
-    public partial class SetKhuyenMai : Form
+    public partial class Option : Form
     {
-        public SetKhuyenMai()
+        public Option()
         {
             InitializeComponent();
         }
