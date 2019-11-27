@@ -56,7 +56,7 @@
             this.cb_Da = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.lb_MaHD = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cb_MaKM = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Order)).BeginInit();
             this.tab_Order.SuspendLayout();
@@ -322,14 +322,14 @@
             this.lb_MaHD.TabIndex = 25;
             this.lb_MaHD.Text = "1222111";
             // 
-            // comboBox1
+            // cb_MaKM
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(605, 234);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(125, 23);
-            this.comboBox1.TabIndex = 27;
-            this.comboBox1.Text = "NOEL2019";
+            this.cb_MaKM.FormattingEnabled = true;
+            this.cb_MaKM.Location = new System.Drawing.Point(605, 234);
+            this.cb_MaKM.Name = "cb_MaKM";
+            this.cb_MaKM.Size = new System.Drawing.Size(125, 23);
+            this.cb_MaKM.TabIndex = 27;
+            this.cb_MaKM.Text = "NOEL2019";
             // 
             // label4
             // 
@@ -348,7 +348,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(249)))), ((int)(((byte)(251)))));
             this.ClientSize = new System.Drawing.Size(916, 540);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cb_MaKM);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lb_MaHD);
             this.Controls.Add(this.label3);
@@ -408,7 +408,7 @@
         private System.Windows.Forms.ComboBox cb_Da;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lb_MaHD;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cb_MaKM;
         private System.Windows.Forms.Label label4;
     }
 }

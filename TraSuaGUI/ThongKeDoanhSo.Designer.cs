@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.tb_MaNV = new System.Windows.Forms.TextBox();
+            this.tb_Day = new System.Windows.Forms.TextBox();
             this.btn_Them = new System.Windows.Forms.Button();
             this.checkBox_Ngay = new System.Windows.Forms.CheckBox();
             this.checkBox_Thang = new System.Windows.Forms.CheckBox();
             this.checkBox_Nam = new System.Windows.Forms.CheckBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.tb_Year = new System.Windows.Forms.TextBox();
+            this.tb_Month = new System.Windows.Forms.TextBox();
+            this.dgv_ThongKe = new System.Windows.Forms.DataGridView();
             this.MaHoaDon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TongTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lb_TongTien = new System.Windows.Forms.Label();
             this.lb2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_ThongKe)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -54,14 +54,14 @@
             this.label1.TabIndex = 33;
             this.label1.Text = "Lọc theo:";
             // 
-            // tb_MaNV
+            // tb_Day
             // 
-            this.tb_MaNV.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_MaNV.Location = new System.Drawing.Point(369, 105);
-            this.tb_MaNV.Name = "tb_MaNV";
-            this.tb_MaNV.Size = new System.Drawing.Size(64, 27);
-            this.tb_MaNV.TabIndex = 34;
-            this.tb_MaNV.Text = "13";
+            this.tb_Day.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Day.Location = new System.Drawing.Point(369, 105);
+            this.tb_Day.Name = "tb_Day";
+            this.tb_Day.Size = new System.Drawing.Size(64, 27);
+            this.tb_Day.TabIndex = 34;
+            this.tb_Day.Text = "13";
             // 
             // btn_Them
             // 
@@ -109,34 +109,34 @@
             this.checkBox_Nam.Text = "Năm";
             this.checkBox_Nam.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // tb_Year
             // 
-            this.textBox1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(149, 104);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(64, 27);
-            this.textBox1.TabIndex = 43;
-            this.textBox1.Text = "2019";
+            this.tb_Year.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Year.Location = new System.Drawing.Point(149, 104);
+            this.tb_Year.Name = "tb_Year";
+            this.tb_Year.Size = new System.Drawing.Size(64, 27);
+            this.tb_Year.TabIndex = 43;
+            this.tb_Year.Text = "2019";
             // 
-            // textBox2
+            // tb_Month
             // 
-            this.textBox2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(260, 104);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(64, 27);
-            this.textBox2.TabIndex = 44;
-            this.textBox2.Text = "11";
+            this.tb_Month.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Month.Location = new System.Drawing.Point(260, 104);
+            this.tb_Month.Name = "tb_Month";
+            this.tb_Month.Size = new System.Drawing.Size(64, 27);
+            this.tb_Month.TabIndex = 44;
+            this.tb_Month.Text = "11";
             // 
-            // dataGridView1
+            // dgv_ThongKe
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv_ThongKe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_ThongKe.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaHoaDon,
             this.TongTien});
-            this.dataGridView1.Location = new System.Drawing.Point(49, 168);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(244, 150);
-            this.dataGridView1.TabIndex = 45;
+            this.dgv_ThongKe.Location = new System.Drawing.Point(49, 168);
+            this.dgv_ThongKe.Name = "dgv_ThongKe";
+            this.dgv_ThongKe.Size = new System.Drawing.Size(244, 150);
+            this.dgv_ThongKe.TabIndex = 45;
             // 
             // MaHoaDon
             // 
@@ -179,18 +179,18 @@
             this.ClientSize = new System.Drawing.Size(613, 376);
             this.Controls.Add(this.lb_TongTien);
             this.Controls.Add(this.lb2);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.dgv_ThongKe);
+            this.Controls.Add(this.tb_Month);
+            this.Controls.Add(this.tb_Year);
             this.Controls.Add(this.checkBox_Nam);
             this.Controls.Add(this.checkBox_Thang);
             this.Controls.Add(this.checkBox_Ngay);
             this.Controls.Add(this.btn_Them);
-            this.Controls.Add(this.tb_MaNV);
+            this.Controls.Add(this.tb_Day);
             this.Controls.Add(this.label1);
             this.Name = "ThongKeDoanhSo";
             this.Text = "Thống kê doanh số";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_ThongKe)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -198,14 +198,14 @@
 
         #endregion
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox tb_MaNV;
+        private System.Windows.Forms.TextBox tb_Day;
         private System.Windows.Forms.Button btn_Them;
         private System.Windows.Forms.CheckBox checkBox_Ngay;
         private System.Windows.Forms.CheckBox checkBox_Thang;
         private System.Windows.Forms.CheckBox checkBox_Nam;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox tb_Year;
+        private System.Windows.Forms.TextBox tb_Month;
+        private System.Windows.Forms.DataGridView dgv_ThongKe;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaHoaDon;
         private System.Windows.Forms.DataGridViewTextBoxColumn TongTien;
         private System.Windows.Forms.Label lb_TongTien;
