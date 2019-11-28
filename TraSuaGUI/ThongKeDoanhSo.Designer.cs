@@ -37,10 +37,11 @@
             this.tb_Year = new System.Windows.Forms.TextBox();
             this.tb_Month = new System.Windows.Forms.TextBox();
             this.dgv_ThongKe = new System.Windows.Forms.DataGridView();
-            this.MaHoaDon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TongTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lb_TongTien = new System.Windows.Forms.Label();
             this.lb2 = new System.Windows.Forms.Label();
+            this.MaHoaDon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ThoiGian = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TongTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ThongKe)).BeginInit();
             this.SuspendLayout();
             // 
@@ -132,21 +133,12 @@
             this.dgv_ThongKe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_ThongKe.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaHoaDon,
+            this.ThoiGian,
             this.TongTien});
             this.dgv_ThongKe.Location = new System.Drawing.Point(49, 168);
             this.dgv_ThongKe.Name = "dgv_ThongKe";
-            this.dgv_ThongKe.Size = new System.Drawing.Size(244, 150);
+            this.dgv_ThongKe.Size = new System.Drawing.Size(338, 150);
             this.dgv_ThongKe.TabIndex = 45;
-            // 
-            // MaHoaDon
-            // 
-            this.MaHoaDon.HeaderText = "Mã hoá đơn";
-            this.MaHoaDon.Name = "MaHoaDon";
-            // 
-            // TongTien
-            // 
-            this.TongTien.HeaderText = "Tổng tiền";
-            this.TongTien.Name = "TongTien";
             // 
             // lb_TongTien
             // 
@@ -154,7 +146,7 @@
             this.lb_TongTien.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_TongTien.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_TongTien.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.lb_TongTien.Location = new System.Drawing.Point(448, 217);
+            this.lb_TongTien.Location = new System.Drawing.Point(469, 219);
             this.lb_TongTien.Name = "lb_TongTien";
             this.lb_TongTien.Size = new System.Drawing.Size(104, 25);
             this.lb_TongTien.TabIndex = 47;
@@ -165,11 +157,26 @@
             this.lb2.AutoSize = true;
             this.lb2.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.lb2.Location = new System.Drawing.Point(365, 219);
+            this.lb2.Location = new System.Drawing.Point(403, 221);
             this.lb2.Name = "lb2";
             this.lb2.Size = new System.Drawing.Size(60, 23);
             this.lb2.TabIndex = 46;
             this.lb2.Text = "TỔNG";
+            // 
+            // MaHoaDon
+            // 
+            this.MaHoaDon.HeaderText = "Mã hoá đơn";
+            this.MaHoaDon.Name = "MaHoaDon";
+            // 
+            // ThoiGian
+            // 
+            this.ThoiGian.HeaderText = "Thời gian";
+            this.ThoiGian.Name = "ThoiGian";
+            // 
+            // TongTien
+            // 
+            this.TongTien.HeaderText = "Tổng tiền";
+            this.TongTien.Name = "TongTien";
             // 
             // ThongKeDoanhSo
             // 
@@ -206,9 +213,10 @@
         private System.Windows.Forms.TextBox tb_Year;
         private System.Windows.Forms.TextBox tb_Month;
         private System.Windows.Forms.DataGridView dgv_ThongKe;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaHoaDon;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TongTien;
         private System.Windows.Forms.Label lb_TongTien;
         private System.Windows.Forms.Label lb2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaHoaDon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ThoiGian;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TongTien;
     }
 }

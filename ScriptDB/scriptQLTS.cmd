@@ -1,1 +1,1 @@
-SQLCMD -S KULCUA -E -i scriptTraSua.sql
+SQLCMD -S KULCUA -E -i sqlTraSua.sql

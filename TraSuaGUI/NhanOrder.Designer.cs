@@ -307,16 +307,16 @@
             this.label3.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label3.Location = new System.Drawing.Point(783, 22);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(88, 19);
+            this.label3.Size = new System.Drawing.Size(68, 19);
             this.label3.TabIndex = 24;
-            this.label3.Text = "Mã hoá đơn";
+            this.label3.Text = "Mã order";
             // 
             // lb_MaHD
             // 
             this.lb_MaHD.AutoSize = true;
             this.lb_MaHD.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_MaHD.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.lb_MaHD.Location = new System.Drawing.Point(806, 54);
+            this.lb_MaHD.Location = new System.Drawing.Point(786, 54);
             this.lb_MaHD.Name = "lb_MaHD";
             this.lb_MaHD.Size = new System.Drawing.Size(65, 19);
             this.lb_MaHD.TabIndex = 25;
