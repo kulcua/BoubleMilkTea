@@ -47,17 +47,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Option.cs">
+    <Compile Include="TuyChon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Option.Designer.cs">
-      <DependentUpon>Option.cs</DependentUpon>
+    <Compile Include="TuyChon.Designer.cs">
+      <DependentUpon>TuyChon.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
+    <Compile Include="DangNhap.Designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="NhanOrder.cs">
       <SubType>Form</SubType>
@@ -91,11 +91,11 @@
     <Compile Include="ThongKeDoanhSo.Designer.cs">
       <DependentUpon>ThongKeDoanhSo.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Option.resx">
-      <DependentUpon>Option.cs</DependentUpon>
+    <EmbeddedResource Include="TuyChon.resx">
+      <DependentUpon>TuyChon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
+    <EmbeddedResource Include="DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NhanOrder.resx">
       <DependentUpon>NhanOrder.cs</DependentUpon>

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BoubleMilkTea
 {
-    public partial class Login : Form
+    public partial class TuyChon : Form
     {
-        public Login()
+        public TuyChon()
         {
             InitializeComponent();
         }

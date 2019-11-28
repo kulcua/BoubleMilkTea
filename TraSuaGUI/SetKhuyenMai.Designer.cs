@@ -130,7 +130,7 @@
             // 
             // btn_Them
             // 
-            this.btn_Them.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(249)))), ((int)(((byte)(251)))));
+            this.btn_Them.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.btn_Them.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Them.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Them.ForeColor = System.Drawing.SystemColors.Control;
@@ -177,7 +177,7 @@
             this.cb_LoaiGiamGia.Name = "cb_LoaiGiamGia";
             this.cb_LoaiGiamGia.Size = new System.Drawing.Size(65, 27);
             this.cb_LoaiGiamGia.TabIndex = 16;
-            this.cb_LoaiGiamGia.Text = "% or /";
+            this.cb_LoaiGiamGia.Text = "% or k";
             // 
             // label7
             // 

@@ -1,6 +1,6 @@
 ﻿namespace BoubleMilkTea
 {
-    partial class Option
+    partial class TuyChon
     {
         /// <summary>
         /// Required designer variable.

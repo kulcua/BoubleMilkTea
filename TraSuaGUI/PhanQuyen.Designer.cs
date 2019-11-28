@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.dgv_DsachNhanVien = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
             this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Username = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pass = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ChucVu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             this.tb_MaNV = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.tb_TenNV = new System.Windows.Forms.TextBox();
@@ -64,16 +64,6 @@
             this.dgv_DsachNhanVien.Name = "dgv_DsachNhanVien";
             this.dgv_DsachNhanVien.Size = new System.Drawing.Size(645, 98);
             this.dgv_DsachNhanVien.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(41, 243);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(148, 19);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Danh sách nhân viên:";
             // 
             // STT
             // 
@@ -104,6 +94,16 @@
             // 
             this.ChucVu.HeaderText = "Chức vụ";
             this.ChucVu.Name = "ChucVu";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(41, 243);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(148, 19);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Danh sách nhân viên:";
             // 
             // tb_MaNV
             // 
@@ -185,7 +185,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(41, 186);
+            this.label6.Location = new System.Drawing.Point(37, 186);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(66, 19);
             this.label6.TabIndex = 27;
