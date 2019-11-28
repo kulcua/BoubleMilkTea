@@ -41,7 +41,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.Size = new System.Drawing.Size(0, 19);
             this.label1.TabIndex = 2;
             // 
             // btn_NhanOrder
@@ -50,9 +50,10 @@
             this.btn_NhanOrder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn_NhanOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_NhanOrder.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_NhanOrder.Location = new System.Drawing.Point(60, 41);
+            this.btn_NhanOrder.Location = new System.Drawing.Point(70, 54);
+            this.btn_NhanOrder.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_NhanOrder.Name = "btn_NhanOrder";
-            this.btn_NhanOrder.Size = new System.Drawing.Size(100, 60);
+            this.btn_NhanOrder.Size = new System.Drawing.Size(117, 78);
             this.btn_NhanOrder.TabIndex = 19;
             this.btn_NhanOrder.Text = "Nhận order";
             this.btn_NhanOrder.UseVisualStyleBackColor = false;
@@ -63,9 +64,10 @@
             this.btn_DoiMK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn_DoiMK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_DoiMK.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_DoiMK.Location = new System.Drawing.Point(60, 230);
+            this.btn_DoiMK.Location = new System.Drawing.Point(321, 314);
+            this.btn_DoiMK.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_DoiMK.Name = "btn_DoiMK";
-            this.btn_DoiMK.Size = new System.Drawing.Size(100, 60);
+            this.btn_DoiMK.Size = new System.Drawing.Size(117, 78);
             this.btn_DoiMK.TabIndex = 20;
             this.btn_DoiMK.Text = "Đổi mật khẩu";
             this.btn_DoiMK.UseVisualStyleBackColor = false;
@@ -76,9 +78,10 @@
             this.btn_QuanLyKho.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn_QuanLyKho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_QuanLyKho.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_QuanLyKho.Location = new System.Drawing.Point(60, 131);
+            this.btn_QuanLyKho.Location = new System.Drawing.Point(70, 171);
+            this.btn_QuanLyKho.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_QuanLyKho.Name = "btn_QuanLyKho";
-            this.btn_QuanLyKho.Size = new System.Drawing.Size(100, 60);
+            this.btn_QuanLyKho.Size = new System.Drawing.Size(117, 78);
             this.btn_QuanLyKho.TabIndex = 21;
             this.btn_QuanLyKho.Text = "Quản lý kho";
             this.btn_QuanLyKho.UseVisualStyleBackColor = false;
@@ -89,9 +92,10 @@
             this.btn_PhanQuyen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn_PhanQuyen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_PhanQuyen.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_PhanQuyen.Location = new System.Drawing.Point(208, 131);
+            this.btn_PhanQuyen.Location = new System.Drawing.Point(548, 171);
+            this.btn_PhanQuyen.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_PhanQuyen.Name = "btn_PhanQuyen";
-            this.btn_PhanQuyen.Size = new System.Drawing.Size(100, 60);
+            this.btn_PhanQuyen.Size = new System.Drawing.Size(117, 78);
             this.btn_PhanQuyen.TabIndex = 22;
             this.btn_PhanQuyen.Text = "Phân quyền";
             this.btn_PhanQuyen.UseVisualStyleBackColor = false;
@@ -102,19 +106,20 @@
             this.btn_ThongKe.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn_ThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_ThongKe.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ThongKe.Location = new System.Drawing.Point(208, 41);
+            this.btn_ThongKe.Location = new System.Drawing.Point(548, 54);
+            this.btn_ThongKe.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_ThongKe.Name = "btn_ThongKe";
-            this.btn_ThongKe.Size = new System.Drawing.Size(100, 60);
+            this.btn_ThongKe.Size = new System.Drawing.Size(117, 78);
             this.btn_ThongKe.TabIndex = 23;
             this.btn_ThongKe.Text = "Thống kê";
             this.btn_ThongKe.UseVisualStyleBackColor = false;
             // 
-            // Option
+            // TuyChon
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(249)))), ((int)(((byte)(251)))));
-            this.ClientSize = new System.Drawing.Size(358, 329);
+            this.ClientSize = new System.Drawing.Size(822, 504);
             this.Controls.Add(this.btn_ThongKe);
             this.Controls.Add(this.btn_PhanQuyen);
             this.Controls.Add(this.btn_QuanLyKho);
@@ -122,7 +127,8 @@
             this.Controls.Add(this.btn_NhanOrder);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.Name = "Option";
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "TuyChon";
             this.Text = "Tuỳ chọn";
             this.ResumeLayout(false);
             this.PerformLayout();

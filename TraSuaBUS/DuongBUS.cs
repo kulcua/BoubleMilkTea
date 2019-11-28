@@ -10,29 +10,29 @@ namespace TraSuaBUS
     public class DuongBUS
     {
         private DuongDAL duongDal;
-        public DuongBUS()
-        {
-            duongDal = new DuongDAL();
-        }
+        //public DuongBUS()
+        //{
+        //    duongDal = new DuongDAL();
+        //}
 
-        public bool them(DuongDTO duong)
-        {
-            bool re = duongDal.them(duong);
-            return re;
-        }
+        //public bool them(DuongDTO duong)
+        //{
+        //    bool re = duongDal.them(duong);
+        //    return re;
+        //}
 
-        public bool xoa(DuongDTO duong)
-        {
-            bool re = DuongDTO.xoa(duong);
-            return re;
-        }
+        //public bool xoa(DuongDTO duong)
+        //{
+        //    bool re = DuongDTO.xoa(duong);
+        //    return re;
+        //}
 
 
-        public bool sua(DuongDTO duong)
-        {
-            bool re = duongDal.sua(duong);
-            return re;
-        }
+        //public bool sua(DuongDTO duong)
+        //{
+        //    bool re = duongDal.sua(duong);
+        //    return re;
+        //}
 
         //public List<HieuXeDTO> select()
         //{

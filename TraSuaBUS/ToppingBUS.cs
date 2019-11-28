@@ -10,30 +10,30 @@ namespace TraSuaBUS
 {
     class ToppingBUS
     {
-        private ToppingDAL toppingDal;
-        public ToppingBUS()
-        {
-            toppingDal = new ToppingDAL();
-        }
+        //private ToppingDAL toppingDal;
+        //public ToppingBUS()
+        //{
+        //    toppingDal = new ToppingDAL();
+        //}
 
-        public bool them(ToppingDTO topping)
-        {
-            bool re = toppingDal.them(topping);
-            return re;
-        }
+        //public bool them(ToppingDTO topping)
+        //{
+        //    bool re = toppingDal.them(topping);
+        //    return re;
+        //}
 
-        public bool xoa(ToppingDTO topping)
-        {
-            bool re = toppingDal.xoa(topping);
-            return re;
-        }
+        //public bool xoa(ToppingDTO topping)
+        //{
+        //    bool re = toppingDal.xoa(topping);
+        //    return re;
+        //}
 
 
-        public bool sua(ToppingDTO topping)
-        {
-            bool re = toppingDal.sua(topping);
-            return re;
-        }
+        //public bool sua(ToppingDTO topping)
+        //{
+        //    bool re = toppingDal.sua(topping);
+        //    return re;
+        //}
 
         //public List<HieuXeDTO> select()
         //{
