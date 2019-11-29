@@ -16,8 +16,8 @@ namespace BoubleMilkTea
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            TuyChon menu = new TuyChon();
-            Application.Run(menu);
+            QuanLyKho kho = new QuanLyKho();
+            Application.Run(kho);
         }
     }
 }

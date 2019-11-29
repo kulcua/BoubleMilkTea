@@ -134,5 +134,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TraSuaBUS\TraSuaBUS.csproj">
+      <Project>{ed3ef711-a72a-48d6-b0c9-1943740bef5b}</Project>
+      <Name>TraSuaBUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TraSuaDTO\TraSuaDTO.csproj">
+      <Project>{ec573067-99d3-4d0d-a756-ddd24fea6e1d}</Project>
+      <Name>TraSuaDTO</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

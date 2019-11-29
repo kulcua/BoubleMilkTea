@@ -8,12 +8,13 @@ namespace TraSuaDTO
 {
     public class ToppingDTO
     {
-        private int matopping;
-        private string topping;
-        private float giatopping;
+        public string edit = "Sửa";
+        public string remove = "Xóa";
 
-        public int Matopping { get => matopping; set => matopping = value; }
-        public string Topping { get => topping; set => topping = value; }
-        public float Giatopping { get => giatopping; set => giatopping = value; }
+        public int maTopping { get; set; }
+        public string tenTopping { get; set; }
+        public float giaTopping { get; set; }
+        public string sua { get => edit; set => edit = value; }
+        public string xoa { get => remove; set => remove = value; }
     }
 }

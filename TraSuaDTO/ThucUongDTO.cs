@@ -8,12 +8,14 @@ namespace TraSuaDTO
 {
     public class ThucUongDTO
     {
-        private int mathucuong;
-        private string tenthucuong;
-        private float gia;
+        public string edit = "Sửa";
+        public string remove = "Xóa";
 
-        public int Mathucuong { get => mathucuong; set => mathucuong = value; }
-        public string Tenthucuong { get => tenthucuong; set => tenthucuong = value; }
-        public float Gia { get => gia; set => gia = value; }
+        public string maThucUong { get; set; }
+        public string tenThucUong { get; set; }
+        public float gia { get; set; }
+        public string sua { get => edit; set => edit = value; }
+        public string xoa { get => remove; set => remove = value; }
+
     }
 }

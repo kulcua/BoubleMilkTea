@@ -8,36 +8,35 @@ using TraSuaDTO;
 
 namespace TraSuaBUS
 {
-    class ToppingBUS
+    public class ToppingBUS
     {
-        //private ToppingDAL toppingDal;
-        //public ToppingBUS()
-        //{
-        //    toppingDal = new ToppingDAL();
-        //}
+        ToppingDAL db = new ToppingDAL();
+        Fxuly xl = new Fxuly();
+        public List<ToppingDTO> select()
+        {
+            return db.select();
+        }
 
-        //public bool them(ToppingDTO topping)
-        //{
-        //    bool re = toppingDal.them(topping);
-        //    return re;
-        //}
+        public bool Add(ToppingDTO topping)
+        {
+            String query = String.Empty;
+            query += "insert into TOPPING(TENTOPPING,GIATOPPING) values('" + topping.tenTopping + "','" + topping.giaTopping + "')";
+            bool kq = xl.Command(query);
+            return kq;
+        }
 
-        //public bool xoa(ToppingDTO topping)
-        //{
-        //    bool re = toppingDal.xoa(topping);
-        //    return re;
-        //}
+        public bool Update(ToppingDTO toppingDTO)
+        {
+            bool kq = db.sua(toppingDTO);
+            return kq;
+        }
 
-
-        //public bool sua(ToppingDTO topping)
-        //{
-        //    bool re = toppingDal.sua(topping);
-        //    return re;
-        //}
-
-        //public List<HieuXeDTO> select()
-        //{
-        //    return hxDal.select();
-        //}
+        public bool delete(ToppingDTO toppingDTO)
+        {
+            String query = String.Empty;
+            query += "delete from TOPPING where MATOPPING='" + toppingDTO.maTopping + "'";
+            bool kq = xl.Command(query);
+            return kq;
+        }
     }
 }
