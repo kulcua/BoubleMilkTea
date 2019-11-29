@@ -37,12 +37,12 @@ namespace BoubleMilkTea
         private void LoadThucUong()
         {
             List<ThucUongDTO> listSanh = thucUongBUS.select();
-            if (listSanh == null)
-            {
-                DialogResult kq = MessageBox.Show("Loi", "Vui long kiem tra lai internet truoc khi load data", MessageBoxButtons.YesNo);
-                if (kq == DialogResult.Yes)
-                    Application.Restart();
-            }
+            //if (listSanh == null)
+            //{
+            //    DialogResult kq = MessageBox.Show("Loi", "Vui long kiem tra lai internet truoc khi load data", MessageBoxButtons.YesNo);
+            //    if (kq == DialogResult.Yes)
+            //        Application.Restart();
+            //}
             gridThucUong.Columns.Clear(); //xóa sạch cột trên datagridview
             gridThucUong.DataSource = null;
 
@@ -81,8 +81,8 @@ namespace BoubleMilkTea
             gridThucUong.Columns.Add(clXoa);
 
             /// ep app cập nhật dữ liệu ngay lập tức lên datagridview  bằng cách binding datasource
-            CurrencyManager myCurrencyManager = (CurrencyManager)this.BindingContext[gridThucUong.DataSource];
-            myCurrencyManager.Refresh();
+            //CurrencyManager myCurrencyManager = (CurrencyManager)this.BindingContext[gridThucUong.DataSource];
+            //myCurrencyManager.Refresh();
         }
         private void btn_ThemThucUong_Click(object sender, EventArgs e)
         {
@@ -156,12 +156,12 @@ namespace BoubleMilkTea
         private void LoadTopping()
         {
             List<ToppingDTO> listSanh = toppingBUS.select();
-            if (listSanh == null)
-            {
-                DialogResult kq = MessageBox.Show("Loi", "Vui long kiem tra lai internet truoc khi load data", MessageBoxButtons.YesNo);
-                if (kq == DialogResult.Yes)
-                    Application.Restart();
-            }
+            //if (listSanh == null)
+            //{
+            //    DialogResult kq = MessageBox.Show("Loi", "Vui long kiem tra lai internet truoc khi load data", MessageBoxButtons.YesNo);
+            //    if (kq == DialogResult.Yes)
+            //        Application.Restart();
+            //}
             gridTopping.Columns.Clear(); //xóa sạch cột trên datagridview
             gridTopping.DataSource = null;
 
@@ -199,9 +199,9 @@ namespace BoubleMilkTea
             clXoa.DataPropertyName = "xoa";
             gridTopping.Columns.Add(clXoa);
 
-            /// ep app cập nhật dữ liệu ngay lập tức lên datagridview  bằng cách binding datasource
-            CurrencyManager myCurrencyManager = (CurrencyManager)this.BindingContext[gridTopping.DataSource];
-            myCurrencyManager.Refresh();
+            ///// ep app cập nhật dữ liệu ngay lập tức lên datagridview  bằng cách binding datasource
+            //CurrencyManager myCurrencyManager = (CurrencyManager)this.BindingContext[gridTopping.DataSource];
+            //myCurrencyManager.Refresh();
         }
 
         private void btn_ThemTopping_Click(object sender, EventArgs e)
