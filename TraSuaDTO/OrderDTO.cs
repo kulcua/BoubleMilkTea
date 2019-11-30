@@ -8,24 +8,23 @@ namespace TraSuaDTO
 {
     public class OrderDTO
     {
-        private int maorder;
-        private int manv;
-        private string tenkh;
-        private DateTime thoigian;
-        private int mathucuong;
-        private int mada;
-        private int maduong;
-        private int matopping;
-        private int soluong;
+        public string choosce = "Chọn";
+        public string edit = "Sửa";
+        public string remove = "Xóa";
 
-        public int Maorder { get => maorder; set => maorder = value; }
-        public int Manv { get => manv; set => manv = value; }
-        public string Tenkh { get => tenkh; set => tenkh = value; }
-        public DateTime Thoigian { get => thoigian; set => thoigian = value; }
-        public int Mathucuong { get => mathucuong; set => mathucuong = value; }
-        public int Mada { get => mada; set => mada = value; }
-        public int Maduong { get => maduong; set => maduong = value; }
-        public int Matopping { get => matopping; set => matopping = value; }
-        public int Soluong { get => soluong; set => soluong = value; }
+        public int maCTHD { get; set; }
+        public int MaThucUong { get; set; }
+        public string maTopping { get; set; }
+        //public DateTime Thoigian { get; set; }
+        public int da { get; set; }
+        public int duong { get; set; }
+        public int maHoaDon { get; set; }
+        public int maThucUong { get; set; }
+        public int maToping { get; set; }
+
+
+        public string chon { get => choosce; set => choosce = value; }
+        public string sua { get => edit; set => edit = value; }
+        public string xoa { get => remove; set => remove = value; }
     }
 }

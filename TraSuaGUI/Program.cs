@@ -17,6 +17,7 @@ namespace BoubleMilkTea
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             QuanLyKho kho = new QuanLyKho();
+            Order order = new Order();
             Application.Run(kho);
         }
     }

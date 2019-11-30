@@ -37,12 +37,10 @@ namespace BoubleMilkTea
         private void LoadThucUong()
         {
             List<ThucUongDTO> listSanh = thucUongBUS.select();
-            //if (listSanh == null)
-            //{
-            //    DialogResult kq = MessageBox.Show("Loi", "Vui long kiem tra lai internet truoc khi load data", MessageBoxButtons.YesNo);
-            //    if (kq == DialogResult.Yes)
-            //        Application.Restart();
-            //}
+            if (listSanh == null)
+            {
+                DialogResult kq = MessageBox.Show("Thông báo ", "Hiện tại chưa có dữ liệu vui lòng thêm dữ liệu");
+            }
             gridThucUong.Columns.Clear(); //xóa sạch cột trên datagridview
             gridThucUong.DataSource = null;
 
@@ -156,12 +154,10 @@ namespace BoubleMilkTea
         private void LoadTopping()
         {
             List<ToppingDTO> listSanh = toppingBUS.select();
-            //if (listSanh == null)
-            //{
-            //    DialogResult kq = MessageBox.Show("Loi", "Vui long kiem tra lai internet truoc khi load data", MessageBoxButtons.YesNo);
-            //    if (kq == DialogResult.Yes)
-            //        Application.Restart();
-            //}
+            if (listSanh == null)
+            {
+                DialogResult kq = MessageBox.Show("Thông báo ", "Hiện tại chưa có dữ liệu vui lòng thêm dữ liệu");
+            }
             gridTopping.Columns.Clear(); //xóa sạch cột trên datagridview
             gridTopping.DataSource = null;
 
