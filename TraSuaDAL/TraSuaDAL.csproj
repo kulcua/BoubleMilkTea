@@ -44,6 +44,7 @@
     <Compile Include="DaDAL.cs" />
     <Compile Include="DuongDAL.cs" />
     <Compile Include="Fxuly.cs" />
+    <Compile Include="HoaDonDAL.cs" />
     <Compile Include="KhuyenMaiDAL.cs" />
     <Compile Include="NhanVienDAL.cs" />
     <Compile Include="OrderDAL.cs" />

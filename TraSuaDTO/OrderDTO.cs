@@ -13,15 +13,20 @@ namespace TraSuaDTO
         public string remove = "Xóa";
 
         public int maCTHD { get; set; }
-        public int MaThucUong { get; set; }
-        public string maTopping { get; set; }
+        public int maThucUong { get; set; }
+        public int maTopping { get; set; }
         //public DateTime Thoigian { get; set; }
         public int da { get; set; }
         public int duong { get; set; }
         public int maHoaDon { get; set; }
-        public int maThucUong { get; set; }
-        public int maToping { get; set; }
+        public string tenThucUong { get; set; }
+        public int giaThucUong { get; set; }
 
+        public string tenTopping { get; set; }
+        public int giaTopping { get; set; }
+
+
+        public int maKM { get; set; }
 
         public string chon { get => choosce; set => choosce = value; }
         public string sua { get => edit; set => edit = value; }

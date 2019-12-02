@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="DaDTO.cs" />
     <Compile Include="DuongDTO.cs" />
+    <Compile Include="HoaDonDTO.cs" />
     <Compile Include="KhuyenMaiDTO.cs" />
     <Compile Include="NhanVienDTO.cs" />
     <Compile Include="OrderDTO.cs" />

@@ -8,35 +8,44 @@ using TraSuaDTO;
 
 namespace TraSuaBUS
 {
-    class OrderBUS
+    public class OrderBUS
     {
-        //public OrderDAL OrderDal;
-        //public OrderBUS()
-        //{
-        //    OrderDal = new OrderDAL();
-        //}
-        //public bool them(OrderDTO order)
-        //{
-        //    bool re = OrderDal.them(order);
-        //    return re;
-        //}
+        OrderDAL order = new OrderDAL();
+        Fxuly xuLy = new Fxuly();
+        public List<OrderDTO> select()
+        {
+            return order.select();
+        }
 
-        //public bool xoa(OrderDTO order)
-        //{
-        //    bool re = OrderDal.xoa(order);
-        //    return re;
-        //}
+        public void Add(OrderDTO orderDTO)
+        {
+            string query = String.Empty;
+            query += "set dateformat DMY ";
+            query += "insert into CTHD(MAHOADON,DUONG,DA) values('" + orderDTO.maHoaDon + "','" + orderDTO.duong + "','" + orderDTO.da + "')";
+            xuLy.Command(query);
+        }
 
+        public List<OrderDTO> SelectTop1()
+        {
+            return order.SelectTop1();
+        }
 
-        //public bool sua(OrderDTO order)
-        //{
-        //    bool re = OrderDal.sua(order);
-        //    return re;
-        //}
+        public void insertThuocUong(OrderDTO orderDTO)
+        {
+            string query = String.Empty;
+            query += "insert into CTHD(MATHUCUONG,MAHOADON) VALUES('" + orderDTO.maThucUong + "','" + orderDTO.maHoaDon + "')";
+            xuLy.Command(query);
+        }
+        public void insertTopping(OrderDTO orderDTO)
+        {
+            string query = String.Empty;
+            query += "insert into CTHD(MATOPPING,MAHOADON) VALUES('" + orderDTO.maTopping + "','" + orderDTO.maHoaDon + "')";
+            xuLy.Command(query);
+        }
 
-        //public List<ChiTietPhieuXuatDTO> select(string sKmahs)
-        //{
-        //    return ctpxDal.select(sKmahs);
-        //}
+        public List<OrderDTO> selectThucUongOrder(int maHoaDon)
+        {
+            return order.selectThucUongOrder(maHoaDon);
+        }
     }
 }

@@ -66,3 +66,5 @@ CREATE TABLE KHUYENMAI
 
   alter table cthd add CONSTRAINT FK_khuyenmai
  FOREIGN KEY (makm) REFERENCES khuyenmai(makm) on update cascade
+
+ -- thay đổi tổng tiền từ hóa đơn sang chi tiết hóa đơn 
