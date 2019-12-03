@@ -21,7 +21,7 @@ namespace TraSuaBUS
         {
             string query = String.Empty;
             query += "set dateformat DMY ";
-            query += "insert into CTHD(MAHOADON,DUONG,DA) values('" + orderDTO.maHoaDon + "','" + orderDTO.duong + "','" + orderDTO.da + "')";
+            query += "insert into CTHD(MAHOADON,DUONG,DA, MAKM) values('" + orderDTO.maHoaDon + "','" + orderDTO.duong + "','" + orderDTO.da + "','"+orderDTO.maKM+"')";
             xuLy.Command(query);
         }
 
@@ -46,6 +46,32 @@ namespace TraSuaBUS
         public List<OrderDTO> selectThucUongOrder(int maHoaDon)
         {
             return order.selectThucUongOrder(maHoaDon);
+        }
+
+        public List<OrderDTO> selectToppingOrder(int maHoaDon)
+        {
+            return order.selectToppingOrder(maHoaDon);
+        }
+
+        public void AddNote(OrderDTO orderDTO)
+        {
+            string query = String.Empty;
+            query += "update CTHD set GHICHU='" + orderDTO.ghiChu + "' where MAHOADON='" + orderDTO.maHoaDon + "'";
+            xuLy.Command(query);
+        }
+
+        public void Delete(OrderDTO orderDTO)
+        {
+            string query = String.Empty;
+            query += "delete CTHD where MATHUCUONG=(SELECT MATHUCUONG FROM THUCUONG WHERE TENTHUCUONG='" + orderDTO.tenThucUong + "')";
+            xuLy.Command(query);
+        }
+
+        public void DeleteTopping(OrderDTO orderDTO)
+        {
+            string query = String.Empty;
+            query += "delete CTHD where MATOPPING=(SELECT MATOPPING FROM TOPPING WHERE TENTOPPING ='" + orderDTO.tenTopping+ "')";
+            xuLy.Command(query);
         }
     }
 }

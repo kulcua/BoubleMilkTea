@@ -58,11 +58,55 @@ namespace TraSuaDAL
             return list;
         }
 
+        public List<OrderDTO> selectToppingOrder(int maHoaDon)
+        {
+            List<OrderDTO> list = new List<OrderDTO>();
+            string query = String.Empty;
+            query += "select [TENTOPPING],[GIATOPPING]from [TOPPING], [CTHD] ";
+            query += " where (TOPPING.[MATOPPING] = CTHD.[MATOPPING]) AND";
+            query += " ( [MAHOADON] LIKE CONCAT ('%',@maHoaDon,'%'))";
+            using (SqlConnection con = new SqlConnection(xuLy.ConnectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    cmd.CommandText = query;
+                    cmd.Parameters.AddWithValue("@maHoaDon", maHoaDon);
+                    try
+                    {
+                        con.Open();
+                        SqlDataReader reader = null;
+                        reader = cmd.ExecuteReader();
+                        if (reader.HasRows == true)
+                        {
+                            while (reader.Read())
+                            {
+                                OrderDTO db = new OrderDTO();
+                                db.tenTopping = reader["TENTOPPING"].ToString();
+                                db.giaTopping = int.Parse(reader["GIATOPPING"].ToString());
+                                list.Add(db);
+                            }
+                        }
+                        con.Close();
+                        con.Dispose();
+                    }
+
+                    catch (Exception ex)
+                    {
+                        con.Close();
+                        con.Dispose();
+                    }
+                }
+                return list;
+            }
+        }
+
         public List<OrderDTO> selectThucUongOrder(int maHoaDon)
         {
             List<OrderDTO> list = new List<OrderDTO>();
             string query = String.Empty;
-            query += "select [TENTHUCUONG],[GIATHUCUONG] from [THUCUONG], [CTHD] ";
+            query += "select [TENTHUCUONG],[GIATHUCUONG],[GHICHU] from [THUCUONG], [CTHD] ";
             query += " where (THUCUONG.[MATHUCUONG] = CTHD.[MATHUCUONG]) AND";
             query += " ( [MAHOADON] LIKE CONCAT ('%',@maHoaDon,'%'))";
             using (SqlConnection con = new SqlConnection(xuLy.ConnectionString))
@@ -85,6 +129,7 @@ namespace TraSuaDAL
                                 OrderDTO db = new OrderDTO();
                                 db.tenThucUong = reader["TENTHUCUONG"].ToString();
                                 db.giaThucUong = int.Parse(reader["GIATHUCUONG"].ToString());
+                                db.ghiChu = reader["GHICHU"].ToString();
                                 list.Add(db);
                             }
                         }

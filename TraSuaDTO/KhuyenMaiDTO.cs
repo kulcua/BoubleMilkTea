@@ -8,5 +8,14 @@ namespace TraSuaDTO
 {
     public class KhuyenMaiDTO
     {
+       public int maKhuyenMai { get; set; }
+        public string tenKhuyenMai { get; set; }
+
+        public DateTime ngayBD { get; set; }
+
+        public DateTime ngayKT { get; set; }
+
+        public int mucKhuyenMai { get; set; }
+
     }
 }

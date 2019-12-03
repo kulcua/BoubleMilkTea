@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cbKM = new System.Windows.Forms.ComboBox();
             this.tbTenKH = new System.Windows.Forms.TextBox();
             this.btTopping = new System.Windows.Forms.Button();
             this.btThucUong = new System.Windows.Forms.Button();
@@ -40,7 +40,6 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.btn_InHoaDon = new System.Windows.Forms.Button();
             this.lb_TongTien = new System.Windows.Forms.Label();
-            this.lb2 = new System.Windows.Forms.Label();
             this.lb_ThoiGian = new System.Windows.Forms.Label();
             this.label = new System.Windows.Forms.Label();
             this.tbMaNhanVien = new System.Windows.Forms.Label();
@@ -48,7 +47,7 @@
             this.lbTongTien = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.lbTienNhan = new System.Windows.Forms.Label();
+            this.lbTienThoi = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.tbTienNhan = new System.Windows.Forms.TextBox();
@@ -64,6 +63,7 @@
             this.lbMaCTHD = new System.Windows.Forms.Label();
             this.gridLoadThucUong = new System.Windows.Forms.DataGridView();
             this.gridLoadTopping = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridThucAn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridTopping)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridAnHD)).BeginInit();
@@ -72,16 +72,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridLoadTopping)).BeginInit();
             this.SuspendLayout();
             // 
-            // comboBox2
+            // cbKM
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cbKM.FormattingEnabled = true;
+            this.cbKM.Items.AddRange(new object[] {
             "70%",
             "30%"});
-            this.comboBox2.Location = new System.Drawing.Point(178, 162);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(196, 25);
-            this.comboBox2.TabIndex = 57;
+            this.cbKM.Location = new System.Drawing.Point(178, 162);
+            this.cbKM.Name = "cbKM";
+            this.cbKM.Size = new System.Drawing.Size(196, 25);
+            this.cbKM.TabIndex = 57;
             // 
             // tbTenKH
             // 
@@ -182,12 +182,14 @@
             this.btn_InHoaDon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn_InHoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_InHoaDon.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_InHoaDon.Location = new System.Drawing.Point(1002, 442);
+            this.btn_InHoaDon.Location = new System.Drawing.Point(1057, 439);
             this.btn_InHoaDon.Name = "btn_InHoaDon";
             this.btn_InHoaDon.Size = new System.Drawing.Size(180, 69);
             this.btn_InHoaDon.TabIndex = 43;
             this.btn_InHoaDon.Text = "In Hoá Đơn";
             this.btn_InHoaDon.UseVisualStyleBackColor = false;
+            this.btn_InHoaDon.Visible = false;
+            this.btn_InHoaDon.Click += new System.EventHandler(this.btn_InHoaDon_Click);
             // 
             // lb_TongTien
             // 
@@ -195,21 +197,10 @@
             this.lb_TongTien.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_TongTien.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_TongTien.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.lb_TongTien.Location = new System.Drawing.Point(766, 359);
+            this.lb_TongTien.Location = new System.Drawing.Point(821, 416);
             this.lb_TongTien.Name = "lb_TongTien";
             this.lb_TongTien.Size = new System.Drawing.Size(2, 31);
             this.lb_TongTien.TabIndex = 41;
-            // 
-            // lb2
-            // 
-            this.lb2.AutoSize = true;
-            this.lb2.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.lb2.Location = new System.Drawing.Point(584, 360);
-            this.lb2.Name = "lb2";
-            this.lb2.Size = new System.Drawing.Size(76, 29);
-            this.lb2.TabIndex = 40;
-            this.lb2.Text = "TỔNG";
             // 
             // lb_ThoiGian
             // 
@@ -263,11 +254,12 @@
             this.lbTongTien.AutoSize = true;
             this.lbTongTien.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTongTien.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.lbTongTien.Location = new System.Drawing.Point(774, 360);
+            this.lbTongTien.Location = new System.Drawing.Point(829, 417);
             this.lbTongTien.Name = "lbTongTien";
             this.lbTongTien.Size = new System.Drawing.Size(76, 29);
             this.lbTongTien.TabIndex = 60;
             this.lbTongTien.Text = "TỔNG";
+            this.lbTongTien.Visible = false;
             // 
             // label2
             // 
@@ -275,7 +267,7 @@
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label2.Location = new System.Drawing.Point(766, 422);
+            this.label2.Location = new System.Drawing.Point(824, 350);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(2, 31);
             this.label2.TabIndex = 62;
@@ -285,22 +277,23 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label5.Location = new System.Drawing.Point(584, 423);
+            this.label5.Location = new System.Drawing.Point(642, 351);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(135, 29);
             this.label5.TabIndex = 61;
             this.label5.Text = "TIỀN NHẬN";
             // 
-            // lbTienNhan
+            // lbTienThoi
             // 
-            this.lbTienNhan.AutoSize = true;
-            this.lbTienNhan.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTienNhan.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.lbTienNhan.Location = new System.Drawing.Point(774, 483);
-            this.lbTienNhan.Name = "lbTienNhan";
-            this.lbTienNhan.Size = new System.Drawing.Size(183, 29);
-            this.lbTienNhan.TabIndex = 66;
-            this.lbTienNhan.Text = "TỔNG THỐI LẠI";
+            this.lbTienThoi.AutoSize = true;
+            this.lbTienThoi.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTienThoi.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.lbTienThoi.Location = new System.Drawing.Point(829, 480);
+            this.lbTienThoi.Name = "lbTienThoi";
+            this.lbTienThoi.Size = new System.Drawing.Size(183, 29);
+            this.lbTienThoi.TabIndex = 66;
+            this.lbTienThoi.Text = "TỔNG THỐI LẠI";
+            this.lbTienThoi.Visible = false;
             // 
             // label7
             // 
@@ -308,7 +301,7 @@
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label7.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label7.Location = new System.Drawing.Point(766, 482);
+            this.label7.Location = new System.Drawing.Point(821, 479);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(2, 31);
             this.label7.TabIndex = 65;
@@ -318,7 +311,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label8.Location = new System.Drawing.Point(584, 482);
+            this.label8.Location = new System.Drawing.Point(639, 479);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(172, 29);
             this.label8.TabIndex = 64;
@@ -326,9 +319,10 @@
             // 
             // tbTienNhan
             // 
-            this.tbTienNhan.Location = new System.Drawing.Point(779, 422);
+            this.tbTienNhan.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbTienNhan.Location = new System.Drawing.Point(837, 350);
             this.tbTienNhan.Name = "tbTienNhan";
-            this.tbTienNhan.Size = new System.Drawing.Size(175, 25);
+            this.tbTienNhan.Size = new System.Drawing.Size(175, 38);
             this.tbTienNhan.TabIndex = 67;
             // 
             // btn_ThemThucUong
@@ -425,7 +419,7 @@
             this.gridAnCTHD.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridAnCTHD.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.gridAnCTHD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridAnCTHD.Location = new System.Drawing.Point(952, 144);
+            this.gridAnCTHD.Location = new System.Drawing.Point(1057, 101);
             this.gridAnCTHD.Name = "gridAnCTHD";
             this.gridAnCTHD.RowHeadersWidth = 51;
             this.gridAnCTHD.RowTemplate.Height = 27;
@@ -442,6 +436,7 @@
             this.lbMaCTHD.Size = new System.Drawing.Size(179, 24);
             this.lbMaCTHD.TabIndex = 77;
             this.lbMaCTHD.Text = "Mã chi Tiết hóa đơn";
+            this.lbMaCTHD.Visible = false;
             // 
             // gridLoadThucUong
             // 
@@ -452,26 +447,43 @@
             this.gridLoadThucUong.Name = "gridLoadThucUong";
             this.gridLoadThucUong.RowHeadersWidth = 51;
             this.gridLoadThucUong.RowTemplate.Height = 27;
-            this.gridLoadThucUong.Size = new System.Drawing.Size(275, 294);
+            this.gridLoadThucUong.Size = new System.Drawing.Size(658, 162);
             this.gridLoadThucUong.TabIndex = 78;
+            this.gridLoadThucUong.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridLoadThucUong_CellContentClick);
             // 
             // gridLoadTopping
             // 
             this.gridLoadTopping.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridLoadTopping.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.gridLoadTopping.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridLoadTopping.Location = new System.Drawing.Point(903, 9);
+            this.gridLoadTopping.Location = new System.Drawing.Point(622, 165);
             this.gridLoadTopping.Name = "gridLoadTopping";
             this.gridLoadTopping.RowHeadersWidth = 51;
             this.gridLoadTopping.RowTemplate.Height = 27;
-            this.gridLoadTopping.Size = new System.Drawing.Size(265, 294);
+            this.gridLoadTopping.Size = new System.Drawing.Size(658, 165);
             this.gridLoadTopping.TabIndex = 79;
+            this.gridLoadTopping.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridLoadTopping_CellContentClick);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(644, 398);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(142, 69);
+            this.button1.TabIndex = 80;
+            this.button1.Text = "Tổng tiền";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Order
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1189, 565);
+            this.ClientSize = new System.Drawing.Size(1292, 565);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.gridLoadTopping);
             this.Controls.Add(this.gridLoadThucUong);
             this.Controls.Add(this.lbMaCTHD);
@@ -485,7 +497,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_ThemThucUong);
             this.Controls.Add(this.tbTienNhan);
-            this.Controls.Add(this.lbTienNhan);
+            this.Controls.Add(this.lbTienThoi);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label2);
@@ -493,7 +505,7 @@
             this.Controls.Add(this.lbTongTien);
             this.Controls.Add(this.gridTopping);
             this.Controls.Add(this.tbMaNhanVien);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.cbKM);
             this.Controls.Add(this.tbTenKH);
             this.Controls.Add(this.btTopping);
             this.Controls.Add(this.btThucUong);
@@ -505,7 +517,6 @@
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.btn_InHoaDon);
             this.Controls.Add(this.lb_TongTien);
-            this.Controls.Add(this.lb2);
             this.Controls.Add(this.lb_ThoiGian);
             this.Controls.Add(this.label);
             this.Name = "Order";
@@ -524,7 +535,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cbKM;
         private System.Windows.Forms.TextBox tbTenKH;
         private System.Windows.Forms.Button btTopping;
         private System.Windows.Forms.Button btThucUong;
@@ -536,7 +547,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button btn_InHoaDon;
         private System.Windows.Forms.Label lb_TongTien;
-        private System.Windows.Forms.Label lb2;
         private System.Windows.Forms.Label lb_ThoiGian;
         private System.Windows.Forms.Label label;
         private System.Windows.Forms.Label tbMaNhanVien;
@@ -544,7 +554,7 @@
         private System.Windows.Forms.Label lbTongTien;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label lbTienNhan;
+        private System.Windows.Forms.Label lbTienThoi;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox tbTienNhan;
@@ -560,5 +570,6 @@
         private System.Windows.Forms.Label lbMaCTHD;
         private System.Windows.Forms.DataGridView gridLoadThucUong;
         private System.Windows.Forms.DataGridView gridLoadTopping;
+        private System.Windows.Forms.Button button1;
     }
 }

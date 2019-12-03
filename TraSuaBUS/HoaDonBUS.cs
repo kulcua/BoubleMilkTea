@@ -24,5 +24,13 @@ namespace TraSuaBUS
         {
             return hoaDonDAL.SelectTop1();
         }
+
+        public void updateTongTien(HoaDonDTO hoaDonDTO)
+        {
+            string query = String.Empty;
+            query += "set dateformat DMY ";
+            query += "update HOADON set TONGTIEN='"+hoaDonDTO.tongTien+"' WHERE MAHOADON='"+hoaDonDTO.maHoaDon+"'";
+            xuLy.Command(query);
+        }
     }
 }

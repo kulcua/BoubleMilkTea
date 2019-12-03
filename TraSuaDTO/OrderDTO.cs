@@ -9,7 +9,7 @@ namespace TraSuaDTO
     public class OrderDTO
     {
         public string choosce = "Chọn";
-        public string edit = "Sửa";
+        public string edit = "Thêm Ghi Chú";
         public string remove = "Xóa";
 
         public int maCTHD { get; set; }
@@ -25,11 +25,11 @@ namespace TraSuaDTO
         public string tenTopping { get; set; }
         public int giaTopping { get; set; }
 
-
+        public string ghiChu { get; set; }
         public int maKM { get; set; }
 
         public string chon { get => choosce; set => choosce = value; }
-        public string sua { get => edit; set => edit = value; }
+        public string themGhiChu { get => edit; set => edit = value; }
         public string xoa { get => remove; set => remove = value; }
     }
 }
