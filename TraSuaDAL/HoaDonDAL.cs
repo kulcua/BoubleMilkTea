@@ -8,14 +8,14 @@ using TraSuaDTO;
 
 namespace TraSuaDAL
 {
-    public class KhuyenMaiDAL
+    public class HoaDonDAL
     {
-        public List<KhuyenMaiDTO> selectLoadCB()
+        Fxuly xuLy = new Fxuly();
+        public List<HoaDonDTO> SelectTop1()
         {
             string query = String.Empty;
-            Fxuly xuLy = new Fxuly();
-            query += "select [MAKM], [TENKM], [MUCGIAMGIA] FROM [KHUYENMAI] ";
-            List<KhuyenMaiDTO> list = new List<KhuyenMaiDTO>();
+            query += "select top 1 [MAHOADON] FROM [HOADON] ORDER BY [MAHOADON] DESC";
+            List<HoaDonDTO> list = new List<HoaDonDTO>();
 
             using (SqlConnection con = new SqlConnection(xuLy.ConnectionString))
             {
@@ -35,10 +35,8 @@ namespace TraSuaDAL
                         {
                             while (reader.Read())
                             {
-                                KhuyenMaiDTO kn = new KhuyenMaiDTO();
-                                kn.maKhuyenMai = int.Parse(reader["MAKM"].ToString());
-                                kn.tenKhuyenMai = reader["TENKM"].ToString();
-                                kn.mucKhuyenMai = int.Parse(reader["MUCGIAMGIA"].ToString());
+                                HoaDonDTO kn = new HoaDonDTO();
+                                kn.maHoaDon = int.Parse(reader["MAHOADON"].ToString());
                                 list.Add(kn);
                             }
                         }
