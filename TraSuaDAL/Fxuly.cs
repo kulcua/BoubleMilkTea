@@ -10,7 +10,7 @@ namespace TraSuaDAL
 {
     public class Fxuly
     {
-        public string ConnectionString = "Data Source=DESKTOP-KSGV3HT;Initial Catalog=TraSua;Integrated Security=True";
+        public string ConnectionString = @"Data Source=DESKTOP-BOSN45B\SQLEXPRESS;Initial Catalog=TraSua;Integrated Security=True";
 
         public bool Command(String sql)
         {

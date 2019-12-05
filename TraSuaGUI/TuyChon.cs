@@ -16,5 +16,33 @@ namespace BoubleMilkTea
         {
             InitializeComponent();
         }
+
+        private void btn_ThongKe_Click(object sender, EventArgs e)
+        {
+            ThongKeDoanhSo thongKe = new ThongKeDoanhSo();
+            this.Hide();
+            thongKe.Show();
+        }
+
+        private void btn_PhanQuyen_Click(object sender, EventArgs e)
+        {
+            PhanQuyen phanQuyen = new PhanQuyen();
+            this.Hide();
+            phanQuyen.Show();
+        }
+
+        private void btn_NhanOrder_Click(object sender, EventArgs e)
+        {
+            NhanOrder nhanOrder = new NhanOrder();
+            this.Hide();
+            nhanOrder.Show();
+        }
+
+        private void btn_QuanLyKho_Click(object sender, EventArgs e)
+        {
+            QuanLyKho qlKho = new QuanLyKho();
+            this.Hide();
+            qlKho.Show();
+        }
     }
 }

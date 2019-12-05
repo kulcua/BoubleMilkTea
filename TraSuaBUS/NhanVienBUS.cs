@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,11 +13,24 @@ namespace TraSuaBUS
 {
     public class NhanVienBUS
     {
-        //private NhanVienDAL NhanvienDal;
-        //public NhanVienBUS()
-        //{
-        //    NhanvienDal = new NhanVienDAL();
-        //}
+        private NhanVienDAL nvDAL = new NhanVienDAL();
+        private Fxuly xl = new Fxuly();
+
+        public List<NhanVienDTO> select()
+        {
+            return nvDAL.select();
+        }
+
+        public bool Them(NhanVienDTO nvDTO)
+        {
+            String query = String.Empty;
+            query += "insert into NHANVIEN(MANV, TENNV, CHUCVU, MATKHAU)";
+            query += "values('" + nvDTO.Manv + "', '" + nvDTO.Tennv + "', '" + nvDTO.Chucvu + "', '" + nvDTO.Matkhau + "')";
+            bool kq = xl.Command(query);
+            return kq;
+        }
+
+        
 
         //public bool them(NhanVienDTO nv)
         //{
