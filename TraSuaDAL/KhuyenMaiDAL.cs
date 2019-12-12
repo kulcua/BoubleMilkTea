@@ -39,8 +39,8 @@ namespace TraSuaDAL
                                 KhuyenMaiDTO db = new KhuyenMaiDTO();
                                 db.Makm = int.Parse(reader["MAKM"].ToString());
                                 db.Tenkm = reader["TENKM"].ToString();
-                                db.TgBD = DateTime.Parse(reader["CHUCVU"].ToString());
-                                db.TgKT = DateTime.Parse(reader["MATKHAU"].ToString());
+                                db.TgBD = DateTime.Parse(reader["TGBD"].ToString());
+                                db.TgKT = DateTime.Parse(reader["TGKT"].ToString());
                                 db.Mucgiamgia = int.Parse(reader["MUCGIAMGIA"].ToString());
                                 listKM.Add(db);
                             }

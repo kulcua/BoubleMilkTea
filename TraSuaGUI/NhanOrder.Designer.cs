@@ -69,7 +69,7 @@
             this.lb_TenNV.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lb_TenNV.Location = new System.Drawing.Point(442, 22);
             this.lb_TenNV.Name = "lb_TenNV";
-            this.lb_TenNV.Size = new System.Drawing.Size(58, 19);
+            this.lb_TenNV.Size = new System.Drawing.Size(72, 24);
             this.lb_TenNV.TabIndex = 2;
             this.lb_TenNV.Text = "Tên NV:";
             // 
@@ -80,7 +80,7 @@
             this.tb_TenNV.Location = new System.Drawing.Point(506, 14);
             this.tb_TenNV.Name = "tb_TenNV";
             this.tb_TenNV.ReadOnly = true;
-            this.tb_TenNV.Size = new System.Drawing.Size(224, 27);
+            this.tb_TenNV.Size = new System.Drawing.Size(224, 32);
             this.tb_TenNV.TabIndex = 3;
             this.tb_TenNV.Text = "nhanvien";
             // 
@@ -91,7 +91,7 @@
             this.lb_ThoiGian.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lb_ThoiGian.Location = new System.Drawing.Point(426, 60);
             this.lb_ThoiGian.Name = "lb_ThoiGian";
-            this.lb_ThoiGian.Size = new System.Drawing.Size(74, 19);
+            this.lb_ThoiGian.Size = new System.Drawing.Size(93, 24);
             this.lb_ThoiGian.TabIndex = 4;
             this.lb_ThoiGian.Text = "Thời gian:";
             // 
@@ -101,7 +101,7 @@
             this.dt_ThoiGian.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dt_ThoiGian.Location = new System.Drawing.Point(506, 54);
             this.dt_ThoiGian.Name = "dt_ThoiGian";
-            this.dt_ThoiGian.Size = new System.Drawing.Size(224, 26);
+            this.dt_ThoiGian.Size = new System.Drawing.Size(224, 30);
             this.dt_ThoiGian.TabIndex = 5;
             this.dt_ThoiGian.Value = new System.DateTime(2019, 11, 27, 19, 46, 10, 0);
             // 
@@ -124,7 +124,7 @@
             this.lb2.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lb2.Location = new System.Drawing.Point(744, 320);
             this.lb2.Name = "lb2";
-            this.lb2.Size = new System.Drawing.Size(60, 23);
+            this.lb2.Size = new System.Drawing.Size(76, 29);
             this.lb2.TabIndex = 12;
             this.lb2.Text = "TỔNG";
             // 
@@ -136,7 +136,7 @@
             this.lb_TongTien.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lb_TongTien.Location = new System.Drawing.Point(810, 317);
             this.lb_TongTien.Name = "lb_TongTien";
-            this.lb_TongTien.Size = new System.Drawing.Size(94, 25);
+            this.lb_TongTien.Size = new System.Drawing.Size(120, 31);
             this.lb_TongTien.TabIndex = 16;
             this.lb_TongTien.Text = "1.000.000";
             // 
@@ -154,38 +154,51 @@
             this.gia});
             this.dgv_Order.Location = new System.Drawing.Point(56, 320);
             this.dgv_Order.Name = "dgv_Order";
+            this.dgv_Order.RowHeadersWidth = 51;
             this.dgv_Order.Size = new System.Drawing.Size(670, 170);
             this.dgv_Order.TabIndex = 17;
             // 
             // STT
             // 
             this.STT.HeaderText = "STT";
+            this.STT.MinimumWidth = 6;
             this.STT.Name = "STT";
+            this.STT.Width = 125;
             // 
             // thucuong
             // 
             this.thucuong.HeaderText = "Thức uống";
+            this.thucuong.MinimumWidth = 6;
             this.thucuong.Name = "thucuong";
+            this.thucuong.Width = 125;
             // 
             // topping
             // 
             this.topping.HeaderText = "Topping";
+            this.topping.MinimumWidth = 6;
             this.topping.Name = "topping";
+            this.topping.Width = 125;
             // 
             // da
             // 
             this.da.HeaderText = "Đá";
+            this.da.MinimumWidth = 6;
             this.da.Name = "da";
+            this.da.Width = 125;
             // 
             // duong
             // 
             this.duong.HeaderText = "Đường";
+            this.duong.MinimumWidth = 6;
             this.duong.Name = "duong";
+            this.duong.Width = 125;
             // 
             // gia
             // 
             this.gia.HeaderText = "Giá";
+            this.gia.MinimumWidth = 6;
             this.gia.Name = "gia";
+            this.gia.Width = 125;
             // 
             // btn_InHoaDon
             // 
@@ -210,10 +223,10 @@
             // 
             this.tabPage2.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.tabPage2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Location = new System.Drawing.Point(4, 28);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(532, 198);
+            this.tabPage2.Size = new System.Drawing.Size(532, 195);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Topping";
             // 
@@ -221,10 +234,10 @@
             // 
             this.tabPage1.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.tabPage1.Font = new System.Drawing.Font("Georgia", 12.75F);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Location = new System.Drawing.Point(4, 28);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(532, 198);
+            this.tabPage1.Size = new System.Drawing.Size(532, 195);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Thức Uống";
             // 
@@ -246,7 +259,7 @@
             this.lb_TenKH.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lb_TenKH.Location = new System.Drawing.Point(52, 22);
             this.lb_TenKH.Name = "lb_TenKH";
-            this.lb_TenKH.Size = new System.Drawing.Size(82, 19);
+            this.lb_TenKH.Size = new System.Drawing.Size(103, 24);
             this.lb_TenKH.TabIndex = 0;
             this.lb_TenKH.Text = "Tên khách: ";
             // 
@@ -256,7 +269,7 @@
             this.tb_TenKH.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_TenKH.Location = new System.Drawing.Point(140, 14);
             this.tb_TenKH.Name = "tb_TenKH";
-            this.tb_TenKH.Size = new System.Drawing.Size(224, 27);
+            this.tb_TenKH.Size = new System.Drawing.Size(224, 32);
             this.tb_TenKH.TabIndex = 19;
             this.tb_TenKH.Text = "khach";
             // 
@@ -267,7 +280,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label1.Location = new System.Drawing.Point(598, 114);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 19);
+            this.label1.Size = new System.Drawing.Size(71, 24);
             this.label1.TabIndex = 20;
             this.label1.Text = "Đường:";
             // 
@@ -278,7 +291,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label2.Location = new System.Drawing.Point(598, 160);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(31, 19);
+            this.label2.Size = new System.Drawing.Size(37, 24);
             this.label2.TabIndex = 21;
             this.label2.Text = "Đá:";
             // 
@@ -287,7 +300,7 @@
             this.cb_Duong.FormattingEnabled = true;
             this.cb_Duong.Location = new System.Drawing.Point(661, 114);
             this.cb_Duong.Name = "cb_Duong";
-            this.cb_Duong.Size = new System.Drawing.Size(68, 23);
+            this.cb_Duong.Size = new System.Drawing.Size(68, 27);
             this.cb_Duong.TabIndex = 22;
             this.cb_Duong.Text = "70%";
             // 
@@ -296,7 +309,7 @@
             this.cb_Da.FormattingEnabled = true;
             this.cb_Da.Location = new System.Drawing.Point(661, 158);
             this.cb_Da.Name = "cb_Da";
-            this.cb_Da.Size = new System.Drawing.Size(68, 23);
+            this.cb_Da.Size = new System.Drawing.Size(68, 27);
             this.cb_Da.TabIndex = 23;
             this.cb_Da.Text = "100%";
             // 
@@ -307,7 +320,7 @@
             this.label3.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label3.Location = new System.Drawing.Point(783, 22);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 19);
+            this.label3.Size = new System.Drawing.Size(88, 24);
             this.label3.TabIndex = 24;
             this.label3.Text = "Mã order";
             // 
@@ -318,7 +331,7 @@
             this.lb_MaHD.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lb_MaHD.Location = new System.Drawing.Point(786, 54);
             this.lb_MaHD.Name = "lb_MaHD";
-            this.lb_MaHD.Size = new System.Drawing.Size(65, 19);
+            this.lb_MaHD.Size = new System.Drawing.Size(80, 24);
             this.lb_MaHD.TabIndex = 25;
             this.lb_MaHD.Text = "1222111";
             // 
@@ -327,7 +340,7 @@
             this.cb_MaKM.FormattingEnabled = true;
             this.cb_MaKM.Location = new System.Drawing.Point(605, 234);
             this.cb_MaKM.Name = "cb_MaKM";
-            this.cb_MaKM.Size = new System.Drawing.Size(125, 23);
+            this.cb_MaKM.Size = new System.Drawing.Size(125, 27);
             this.cb_MaKM.TabIndex = 27;
             this.cb_MaKM.Text = "NOEL2019";
             // 
@@ -338,16 +351,16 @@
             this.label4.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label4.Location = new System.Drawing.Point(601, 199);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(116, 19);
+            this.label4.Size = new System.Drawing.Size(147, 24);
             this.label4.TabIndex = 26;
             this.label4.Text = "Mã KM (nếu có):";
             // 
             // NhanOrder
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(249)))), ((int)(((byte)(251)))));
-            this.ClientSize = new System.Drawing.Size(916, 540);
+            this.ClientSize = new System.Drawing.Size(957, 540);
             this.Controls.Add(this.cb_MaKM);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lb_MaHD);

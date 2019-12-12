@@ -42,7 +42,7 @@ namespace BoubleMilkTea
             {
                 if (checkPass2)
                 {
-                    return 1;
+                    return 2;
                 }
             }
             return 0;
@@ -53,11 +53,18 @@ namespace BoubleMilkTea
         private void btn_DangNhap_Click(object sender, EventArgs e)
         {
             TuyChon tuyChon = new TuyChon();
+            NhanOrder nhanOrder = new NhanOrder();
             if (CheckAccount() == 1)
             {
                 //SelectedText = tb_TenTaiKhoan.Text; //lấy text từ tbAccount truyền vô string SelectedText
                 this.Hide();
                 tuyChon.Show();
+            }
+            else if (CheckAccount() == 2)
+            {
+                //SelectedText = tb_TenTaiKhoan.Text; //lấy text từ tbAccount truyền vô string SelectedText
+                this.Hide();
+                nhanOrder.Show();
             }
             else
             {
