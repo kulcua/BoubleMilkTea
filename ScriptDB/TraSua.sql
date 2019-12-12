@@ -66,3 +66,9 @@ CREATE TABLE KHUYENMAI
 
   alter table cthd add CONSTRAINT FK_khuyenmai
  FOREIGN KEY (makm) REFERENCES khuyenmai(makm) on update cascade
+
+ alter table NHANVIEN drop column TENDN 
+ alter table NHANVIEN add MATKHAU INT
+
+ insert into NHANVIEN (TENNV, CHUCVU, MATKHAU)
+ values('asdsdsda','asdsdsa','12122')

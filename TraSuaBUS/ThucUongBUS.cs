@@ -16,6 +16,11 @@ namespace TraSuaBUS
         {
             return db.select();
         }
+
+        public List<string> selectTenTU()
+        {
+            return db.selectTen();
+        }
         public bool Add(ThucUongDTO thucuong)
         {
             String query = String.Empty;

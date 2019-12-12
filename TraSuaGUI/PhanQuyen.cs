@@ -27,7 +27,7 @@ namespace BoubleMilkTea
         {
             nvDTO.Tennv = tb_TenNV.Text;
             nvDTO.Chucvu = cb_NV.Text;
-            nvDTO.Matkhau = r.Next(1, 10000);
+            nvDTO.Matkhau = r.Next(1001, 10000);
             if (nvDTO != null)
             {
                 bool kq = nvBUS.Them(nvDTO);
@@ -39,7 +39,6 @@ namespace BoubleMilkTea
                 else
                     MessageBox.Show("Thêm nhân viên thất bại!");
             }
-
         }
 
         private void LoadNV()
@@ -87,7 +86,7 @@ namespace BoubleMilkTea
             clMatKhau.DataPropertyName = "Matkhau";
             dgv_DsachNhanVien.Columns.Add(clMatKhau);
 
-            // có warning chỗ này tui không biết sửa sao
+
             CurrencyManager myCurrencyManager = (CurrencyManager)this.BindingContext[dgv_DsachNhanVien.DataSource];
             myCurrencyManager.Refresh();
 

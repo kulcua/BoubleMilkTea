@@ -24,8 +24,8 @@ namespace TraSuaBUS
         public bool Them(NhanVienDTO nvDTO)
         {
             String query = String.Empty;
-            query += "insert into NHANVIEN(MANV, TENNV, CHUCVU, MATKHAU)";
-            query += "values('" + nvDTO.Manv + "', '" + nvDTO.Tennv + "', '" + nvDTO.Chucvu + "', '" + nvDTO.Matkhau + "')";
+            query += "insert into NHANVIEN(TENNV, CHUCVU, MATKHAU)";
+            query += "values('" + nvDTO.Tennv + "', '" + nvDTO.Chucvu + "', '" + nvDTO.Matkhau + "')";
             bool kq = xl.Command(query);
             return kq;
         }

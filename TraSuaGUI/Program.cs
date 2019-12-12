@@ -19,7 +19,8 @@ namespace BoubleMilkTea
             QuanLyKho kho = new QuanLyKho();
             DangNhap dangNhap = new DangNhap();
             TuyChon tuyChon = new TuyChon();
-            Application.Run(tuyChon);
+            SetKhuyenMai km = new SetKhuyenMai();
+            Application.Run(km);
         }
     }
 }
