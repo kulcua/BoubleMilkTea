@@ -45,7 +45,7 @@ namespace BoubleMilkTea
 
         private void LoadKhuyenMai()
         {
-            List<KhuyenMaiDTO> listLoadSanh = khuyenMaiBUS.select();
+            List<KhuyenMaiDTO> listLoadSanh = khuyenMaiBUS.selectKM();
             if (listLoadSanh == null)
             {
                 MessageBox.Show("Loi", "Co loi xay ra trong qua trinh load sanh");
