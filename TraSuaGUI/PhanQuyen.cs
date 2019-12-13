@@ -91,5 +91,13 @@ namespace BoubleMilkTea
             myCurrencyManager.Refresh();
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TuyChon tuyChon = new TuyChon();
+            this.Hide();
+            this.Close();
+            tuyChon.Show();
+        }
     }
 }

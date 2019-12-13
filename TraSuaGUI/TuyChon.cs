@@ -44,5 +44,12 @@ namespace BoubleMilkTea
             this.Hide();
             qlKho.Show();
         }
+
+        private void btn_KM_Click(object sender, EventArgs e)
+        {
+            SetKhuyenMai setKhuyenMai = new SetKhuyenMai();
+            this.Hide();
+            setKhuyenMai.Show();
+        }
     }
 }

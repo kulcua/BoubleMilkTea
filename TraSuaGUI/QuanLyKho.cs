@@ -266,5 +266,12 @@ namespace BoubleMilkTea
             tbGiaTopping.Text = row.Cells[2].Value.ToString();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TuyChon tuyChon = new TuyChon();
+            this.Hide();
+            this.Close();
+            tuyChon.Show();
+        }
     }
 }

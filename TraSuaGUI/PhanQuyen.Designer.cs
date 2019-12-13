@@ -35,6 +35,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.cb_NV = new System.Windows.Forms.ComboBox();
             this.btn_Them = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_DsachNhanVien)).BeginInit();
             this.SuspendLayout();
             // 
@@ -121,12 +122,23 @@
             this.btn_Them.UseVisualStyleBackColor = false;
             this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(12, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(103, 54);
+            this.button1.TabIndex = 32;
+            this.button1.Text = "BACK";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // PhanQuyen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(249)))), ((int)(((byte)(251)))));
             this.ClientSize = new System.Drawing.Size(1012, 481);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_Them);
             this.Controls.Add(this.cb_NV);
             this.Controls.Add(this.label6);
@@ -152,5 +164,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cb_NV;
         private System.Windows.Forms.Button btn_Them;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -434,5 +434,13 @@ namespace BoubleMilkTea
                 this.LoadKhuyenMai();
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            TuyChon tuyChon = new TuyChon();
+            this.Hide();
+            this.Close();
+            tuyChon.Show();
+        }
     }
 }

@@ -44,6 +44,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.tb_MaKM = new System.Windows.Forms.TextBox();
             this.dgv_KM = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_KM)).BeginInit();
             this.SuspendLayout();
             // 
@@ -223,12 +224,23 @@
             this.dgv_KM.Size = new System.Drawing.Size(803, 182);
             this.dgv_KM.TabIndex = 19;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(12, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(96, 55);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "BACK";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // SetKhuyenMai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(249)))), ((int)(((byte)(251)))));
             this.ClientSize = new System.Drawing.Size(1061, 729);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dgv_KM);
             this.Controls.Add(this.tb_MaKM);
             this.Controls.Add(this.label7);
@@ -272,5 +284,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox tb_MaKM;
         private System.Windows.Forms.DataGridView dgv_KM;
+        private System.Windows.Forms.Button button1;
     }
 }
