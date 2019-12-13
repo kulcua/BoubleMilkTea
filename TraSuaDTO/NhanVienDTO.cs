@@ -11,9 +11,11 @@ namespace TraSuaDTO
         private int manv;
         private string tennv;
         private string chucvu;
+        private int matkhau;
 
         public int Manv { get => manv; set => manv = value; }
         public string Tennv { get => tennv; set => tennv = value; }
         public string Chucvu { get => chucvu; set => chucvu = value; }
+        public int Matkhau { get => matkhau; set => matkhau = value; }
     }
 }

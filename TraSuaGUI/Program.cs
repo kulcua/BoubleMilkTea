@@ -17,8 +17,11 @@ namespace BoubleMilkTea
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             QuanLyKho kho = new QuanLyKho();
-            Order order = new Order();
-            Application.Run(order);
+            DangNhap dangNhap = new DangNhap();
+            TuyChon tuyChon = new TuyChon();
+            SetKhuyenMai km = new SetKhuyenMai();
+            ThongKeDoanhSo thongke = new ThongKeDoanhSo();
+            Application.Run(dangNhap);
         }
     }
 }

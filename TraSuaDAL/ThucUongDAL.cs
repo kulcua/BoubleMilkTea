@@ -13,6 +13,50 @@ namespace TraSuaDAL
         Fxuly xuLy = new Fxuly();
         //tạo danh sách và đưa dữ liệu vào danh sách
 
+
+        // trả về list tên
+        public List<string> selectTen()
+        {
+            List<string> listTen = new List<string>();
+            string query = string.Empty;
+
+            query += "select [TENTHUCUONG]";
+            query += " from [THUCUONG]";
+            using (SqlConnection conn = new SqlConnection(xuLy.ConnectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = conn;
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    cmd.CommandText = query;
+                    try
+                    {
+                        conn.Open();
+                        SqlDataReader reader = null;
+                        reader = cmd.ExecuteReader();
+                        if (reader.HasRows == true)
+                        {
+                            while (reader.Read())
+                            {
+                                string db = "";
+                                db = reader["TENTHUCUONG"].ToString();
+                                listTen.Add(db);
+                            }
+                        }
+                        conn.Close();
+                        conn.Dispose(); // tra lai tat ca tai nguyen da su dung de giai phong bo nho
+                    }
+                    catch (Exception ex)
+                    {
+                        conn.Close();
+                        return null;
+                    }
+                }
+            }
+
+            return listTen;
+        }
+
         public List<ThucUongDTO> select()
         {
             List<ThucUongDTO> listSanh = new List<ThucUongDTO>();
