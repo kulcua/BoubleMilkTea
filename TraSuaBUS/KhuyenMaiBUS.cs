@@ -17,6 +17,7 @@ namespace TraSuaBUS
         public List<KhuyenMaiDTO> selectKM()
         {
             return khuyenMaiDAL.selectLoadCB();
+        }
         private KhuyenMaiDAL kmDAL = new KhuyenMaiDAL();
 
         private Fxuly xl = new Fxuly();

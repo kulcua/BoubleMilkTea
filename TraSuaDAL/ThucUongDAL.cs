@@ -83,9 +83,9 @@ namespace TraSuaDAL
                                 ThucUongDTO db = new ThucUongDTO();
                                 db.maThucUong = reader["MATHUCUONG"].ToString();
                                 db.tenThucUong = reader["TENTHUCUONG"].ToString();
-                                db.gia = int.Parse(reader["GIATHUCUONG"].ToString());
+                                db.gia = float.Parse(reader["GIATHUCUONG"].ToString());
                                 listSanh.Add(db);
-                            }
+                             }
                         }
                         conn.Close();
                         conn.Dispose(); // tra lai tat ca tai nguyen da su dung de giai phong bo nho

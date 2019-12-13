@@ -21,6 +21,7 @@ namespace BoubleMilkTea
             TuyChon tuyChon = new TuyChon();
             SetKhuyenMai km = new SetKhuyenMai();
             ThongKeDoanhSo thongke = new ThongKeDoanhSo();
+            Order order = new Order();
             Application.Run(dangNhap);
         }
     }

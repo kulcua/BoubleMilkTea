@@ -20,7 +20,7 @@ namespace TraSuaDTO
         public int duong { get; set; }
         public int maHoaDon { get; set; }
         public string tenThucUong { get; set; }
-        public int giaThucUong { get; set; }
+        public float giaThucUong { get; set; }
 
         public string tenTopping { get; set; }
         public int giaTopping { get; set; }

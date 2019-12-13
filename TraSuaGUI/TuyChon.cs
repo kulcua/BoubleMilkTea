@@ -33,7 +33,7 @@ namespace BoubleMilkTea
 
         private void btn_NhanOrder_Click(object sender, EventArgs e)
         {
-            NhanOrder nhanOrder = new NhanOrder();
+            Order nhanOrder = new Order();
             this.Hide();
             nhanOrder.Show();
         }

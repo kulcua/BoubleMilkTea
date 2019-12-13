@@ -12,7 +12,7 @@ namespace TraSuaDTO
         public int maNV { get; set; }
         public string tenKH { get; set; }
         public DateTime TGBD{ get; set; }
-        public int tongTien { get; set; }
+        public float tongTien { get; set; }
 
     }
 }

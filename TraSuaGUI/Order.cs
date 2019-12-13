@@ -370,17 +370,17 @@ namespace BoubleMilkTea
             }
         }
 
-        private int TinhTongTien()
+        private float TinhTongTien()
         {
-            int tongTien = 0;
+           float tongTien = 0;
 
             for (int i =0;i <gridLoadThucUong.RowCount; i++)
             {
-                tongTien += int.Parse(gridLoadThucUong.Rows[i].Cells["giaThucUong"].Value.ToString());
+                tongTien += float.Parse(gridLoadThucUong.Rows[i].Cells["giaThucUong"].Value.ToString());
             }
             for (int i = 0; i < gridLoadTopping.RowCount; i++)
             {
-                tongTien += int.Parse(gridLoadTopping.Rows[i].Cells["giaTopping"].Value.ToString());
+                tongTien += float.Parse(gridLoadTopping.Rows[i].Cells["giaTopping"].Value.ToString());
             }
             return tongTien;
         }
@@ -397,9 +397,9 @@ namespace BoubleMilkTea
                 lbTongTien.Visible = true;
                 lbTienThoi.Visible = true;
                 btn_InHoaDon.Visible = true;
-                int tongTien = TinhTongTien();
-                int tienNhan = int.Parse(tbTienNhan.Text);
-                int tienThoi = tienNhan - tongTien;
+                float tongTien = TinhTongTien();
+                float tienNhan = float.Parse(tbTienNhan.Text);
+                float tienThoi = tienNhan - tongTien ;
                 lbTongTien.Text = Convert.ToString(tongTien);
                 lbTienThoi.Text = Convert.ToString(tienThoi);
             }
@@ -422,7 +422,7 @@ namespace BoubleMilkTea
 
         private void btn_InHoaDon_Click(object sender, EventArgs e)
         {
-            hoaDonDTO.tongTien = int.Parse(lbTongTien.Text);
+            hoaDonDTO.tongTien = float.Parse(lbTongTien.Text);
             hoaDonDTO.maHoaDon = int.Parse(lbMaHD.Text);
             hoaDonBUS.updateTongTien(hoaDonDTO);
             DialogResult kq = MessageBox.Show("Thanh toan thanh cong", "THÔNG BÁO", MessageBoxButtons.OK);

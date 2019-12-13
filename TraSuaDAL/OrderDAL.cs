@@ -128,7 +128,7 @@ namespace TraSuaDAL
                             {
                                 OrderDTO db = new OrderDTO();
                                 db.tenThucUong = reader["TENTHUCUONG"].ToString();
-                                db.giaThucUong = int.Parse(reader["GIATHUCUONG"].ToString());
+                                db.giaThucUong = float.Parse(reader["GIATHUCUONG"].ToString());
                                 db.ghiChu = reader["GHICHU"].ToString();
                                 list.Add(db);
                             }

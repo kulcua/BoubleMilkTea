@@ -96,12 +96,14 @@
             // 
             this.cb_NV.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_NV.FormattingEnabled = true;
+            this.cb_NV.Items.AddRange(new object[] {
+            "nhân viên ",
+            "quản lí "});
             this.cb_NV.Location = new System.Drawing.Point(285, 171);
             this.cb_NV.Margin = new System.Windows.Forms.Padding(4);
             this.cb_NV.Name = "cb_NV";
             this.cb_NV.Size = new System.Drawing.Size(327, 32);
             this.cb_NV.TabIndex = 30;
-            this.cb_NV.Text = "quản lý cửa hàng";
             // 
             // btn_Them
             // 

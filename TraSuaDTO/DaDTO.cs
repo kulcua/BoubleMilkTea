@@ -10,7 +10,6 @@ namespace TraSuaDTO
     {
         private int mada;
         private string da;
-
         public int Mada { get => mada; set => mada = value; }
         public string Da { get => da; set => da = value; }
     }

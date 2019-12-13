@@ -53,7 +53,7 @@ namespace BoubleMilkTea
         private void btn_DangNhap_Click(object sender, EventArgs e)
         {
             TuyChon tuyChon = new TuyChon();
-            NhanOrder nhanOrder = new NhanOrder();
+            Order nhanOrder = new Order();
             if (CheckAccount() == 1)
             {
                 //SelectedText = tb_TenTaiKhoan.Text; //lấy text từ tbAccount truyền vô string SelectedText
