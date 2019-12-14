@@ -57,7 +57,7 @@ namespace TraSuaBUS
         {
             string query = String.Empty;
             query += "update CTHD set GHICHU='" + orderDTO.ghiChu + "' where MAHOADON='" + orderDTO.maHoaDon + "'";
-            xuLy.Command(query);
+             xuLy.Command(query);
         }
 
         public void Delete(OrderDTO orderDTO)

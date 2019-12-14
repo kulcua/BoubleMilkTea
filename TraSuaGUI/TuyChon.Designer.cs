@@ -130,7 +130,7 @@
             this.btn_KM.Name = "btn_KM";
             this.btn_KM.Size = new System.Drawing.Size(227, 136);
             this.btn_KM.TabIndex = 25;
-            this.btn_KM.Text = "Chương Trình Khuyến Mãi\r\n";
+            this.btn_KM.Text = "Chương trình khuyến mãi";
             this.btn_KM.UseVisualStyleBackColor = false;
             this.btn_KM.Click += new System.EventHandler(this.btn_KM_Click);
             // 

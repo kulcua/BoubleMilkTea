@@ -54,7 +54,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.tbTenTopping = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_Back = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridThucUong)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -71,6 +71,7 @@
             this.tbTenThucUong.Name = "tbTenThucUong";
             this.tbTenThucUong.Size = new System.Drawing.Size(298, 32);
             this.tbTenThucUong.TabIndex = 23;
+            this.tbTenThucUong.Text = "thucuong1";
             // 
             // label1
             // 
@@ -191,7 +192,7 @@
             this.tbGiaThucUong.Name = "tbGiaThucUong";
             this.tbGiaThucUong.Size = new System.Drawing.Size(298, 32);
             this.tbGiaThucUong.TabIndex = 25;
-            this.tbGiaThucUong.Text = " 0.00";
+            this.tbGiaThucUong.Text = " 100";
             // 
             // label2
             // 
@@ -298,6 +299,7 @@
             this.tbGiaTopping.Name = "tbGiaTopping";
             this.tbGiaTopping.Size = new System.Drawing.Size(298, 32);
             this.tbGiaTopping.TabIndex = 25;
+            this.tbGiaTopping.Text = "20";
             // 
             // label5
             // 
@@ -319,6 +321,7 @@
             this.tbTenTopping.Name = "tbTenTopping";
             this.tbTenTopping.Size = new System.Drawing.Size(298, 32);
             this.tbTenTopping.TabIndex = 23;
+            this.tbTenTopping.Text = "topping1";
             // 
             // label7
             // 
@@ -331,15 +334,19 @@
             this.label7.TabIndex = 22;
             this.label7.Text = "Tên topping:";
             // 
-            // button1
+            // btn_Back
             // 
-            this.button1.Location = new System.Drawing.Point(2, 13);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(128, 40);
-            this.button1.TabIndex = 27;
-            this.button1.Text = "BACK";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_Back.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btn_Back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Back.ForeColor = System.Drawing.Color.White;
+            this.btn_Back.Location = new System.Drawing.Point(12, 12);
+            this.btn_Back.Name = "btn_Back";
+            this.btn_Back.Size = new System.Drawing.Size(76, 43);
+            this.btn_Back.TabIndex = 82;
+            this.btn_Back.Text = "Back";
+            this.btn_Back.UseVisualStyleBackColor = false;
+            this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
             // 
             // QuanLyKho
             // 
@@ -347,7 +354,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(249)))), ((int)(((byte)(251)))));
             this.ClientSize = new System.Drawing.Size(1238, 485);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_Back);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -391,6 +398,6 @@
         private System.Windows.Forms.DataGridViewButtonColumn xoa;
         private System.Windows.Forms.Label tbMaThucUong;
         private System.Windows.Forms.Label tbMaTopping;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_Back;
     }
 }

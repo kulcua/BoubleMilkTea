@@ -30,6 +30,15 @@ namespace TraSuaBUS
             return kq;
         }
 
+        public bool Xoa(NhanVienDTO nvDTO)
+        {
+            string query = "delete from NHANVIEN where MANV='" + nvDTO.Manv + "'";
+            bool kq = xl.Command(query);
+            return kq;
+        }
+
+
+
         
 
         //public bool them(NhanVienDTO nv)

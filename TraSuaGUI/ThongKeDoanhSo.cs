@@ -100,7 +100,7 @@ namespace BoubleMilkTea
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_Back_Click(object sender, EventArgs e)
         {
             TuyChon tuyChon = new TuyChon();
             this.Hide();

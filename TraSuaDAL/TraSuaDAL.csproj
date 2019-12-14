@@ -41,8 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DaDAL.cs" />
-    <Compile Include="DuongDAL.cs" />
     <Compile Include="Fxuly.cs" />
     <Compile Include="HoaDonDAL.cs" />
     <Compile Include="KhuyenMaiDAL.cs" />

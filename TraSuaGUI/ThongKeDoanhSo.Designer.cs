@@ -32,7 +32,7 @@
             this.btn_Them = new System.Windows.Forms.Button();
             this.dgv_ThongKe = new System.Windows.Forms.DataGridView();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_Back = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ThongKe)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,15 +84,19 @@
             this.comboBox1.Size = new System.Drawing.Size(121, 24);
             this.comboBox1.TabIndex = 48;
             // 
-            // button1
+            // btn_Back
             // 
-            this.button1.Location = new System.Drawing.Point(13, 13);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(109, 56);
-            this.button1.TabIndex = 49;
-            this.button1.Text = "BACK";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_Back.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btn_Back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Back.ForeColor = System.Drawing.Color.White;
+            this.btn_Back.Location = new System.Drawing.Point(12, 12);
+            this.btn_Back.Name = "btn_Back";
+            this.btn_Back.Size = new System.Drawing.Size(76, 43);
+            this.btn_Back.TabIndex = 82;
+            this.btn_Back.Text = "Back";
+            this.btn_Back.UseVisualStyleBackColor = false;
+            this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
             // 
             // ThongKeDoanhSo
             // 
@@ -100,7 +104,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(249)))), ((int)(((byte)(251)))));
             this.ClientSize = new System.Drawing.Size(817, 463);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_Back);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.dgv_ThongKe);
             this.Controls.Add(this.btn_Them);
@@ -119,6 +123,6 @@
         private System.Windows.Forms.Button btn_Them;
         private System.Windows.Forms.DataGridView dgv_ThongKe;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_Back;
     }
 }

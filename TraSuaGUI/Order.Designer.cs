@@ -60,11 +60,10 @@
             this.label10 = new System.Windows.Forms.Label();
             this.gridAnHD = new System.Windows.Forms.DataGridView();
             this.gridAnCTHD = new System.Windows.Forms.DataGridView();
-            this.lbMaCTHD = new System.Windows.Forms.Label();
             this.gridLoadThucUong = new System.Windows.Forms.DataGridView();
             this.gridLoadTopping = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_Tongtien = new System.Windows.Forms.Button();
+            this.btn_Back = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridThucAn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridTopping)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridAnHD)).BeginInit();
@@ -90,6 +89,7 @@
             this.tbTenKH.Name = "tbTenKH";
             this.tbTenKH.Size = new System.Drawing.Size(228, 22);
             this.tbTenKH.TabIndex = 53;
+            this.tbTenKH.Text = "khach";
             // 
             // btTopping
             // 
@@ -132,7 +132,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label4.Location = new System.Drawing.Point(23, 224);
+            this.label4.Location = new System.Drawing.Point(23, 221);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(147, 24);
             this.label4.TabIndex = 49;
@@ -143,7 +143,7 @@
             this.lbMaHD.AutoSize = true;
             this.lbMaHD.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbMaHD.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.lbMaHD.Location = new System.Drawing.Point(23, 112);
+            this.lbMaHD.Location = new System.Drawing.Point(150, 81);
             this.lbMaHD.Name = "lbMaHD";
             this.lbMaHD.Size = new System.Drawing.Size(0, 24);
             this.lbMaHD.TabIndex = 48;
@@ -155,16 +155,16 @@
             this.label3.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label3.Location = new System.Drawing.Point(20, 81);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(115, 24);
+            this.label3.Size = new System.Drawing.Size(113, 24);
             this.label3.TabIndex = 47;
-            this.label3.Text = "Mã Hóa Đơn";
+            this.label3.Text = "Mã hóa đơn";
             // 
             // lb_TenKH
             // 
             this.lb_TenKH.AutoSize = true;
             this.lb_TenKH.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_TenKH.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.lb_TenKH.Location = new System.Drawing.Point(19, 183);
+            this.lb_TenKH.Location = new System.Drawing.Point(23, 183);
             this.lb_TenKH.Name = "lb_TenKH";
             this.lb_TenKH.Size = new System.Drawing.Size(103, 24);
             this.lb_TenKH.TabIndex = 36;
@@ -183,6 +183,7 @@
             this.btn_InHoaDon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn_InHoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_InHoaDon.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_InHoaDon.ForeColor = System.Drawing.Color.White;
             this.btn_InHoaDon.Location = new System.Drawing.Point(1206, 486);
             this.btn_InHoaDon.Name = "btn_InHoaDon";
             this.btn_InHoaDon.Size = new System.Drawing.Size(206, 65);
@@ -219,7 +220,7 @@
             this.label.AutoSize = true;
             this.label.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label.Location = new System.Drawing.Point(168, 81);
+            this.label.Location = new System.Drawing.Point(358, 81);
             this.label.Name = "label";
             this.label.Size = new System.Drawing.Size(135, 24);
             this.label.TabIndex = 37;
@@ -230,7 +231,7 @@
             this.tbMaNhanVien.AutoSize = true;
             this.tbMaNhanVien.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbMaNhanVien.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.tbMaNhanVien.Location = new System.Drawing.Point(329, 81);
+            this.tbMaNhanVien.Location = new System.Drawing.Point(519, 81);
             this.tbMaNhanVien.Name = "tbMaNhanVien";
             this.tbMaNhanVien.Size = new System.Drawing.Size(20, 24);
             this.tbMaNhanVien.TabIndex = 58;
@@ -427,18 +428,6 @@
             this.gridAnCTHD.Size = new System.Drawing.Size(185, 107);
             this.gridAnCTHD.TabIndex = 76;
             // 
-            // lbMaCTHD
-            // 
-            this.lbMaCTHD.AutoSize = true;
-            this.lbMaCTHD.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMaCTHD.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.lbMaCTHD.Location = new System.Drawing.Point(381, 81);
-            this.lbMaCTHD.Name = "lbMaCTHD";
-            this.lbMaCTHD.Size = new System.Drawing.Size(179, 24);
-            this.lbMaCTHD.TabIndex = 77;
-            this.lbMaCTHD.Text = "Mã chi Tiết hóa đơn";
-            this.lbMaCTHD.Visible = false;
-            // 
             // gridLoadThucUong
             // 
             this.gridLoadThucUong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -465,40 +454,45 @@
             this.gridLoadTopping.TabIndex = 79;
             this.gridLoadTopping.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridLoadTopping_CellContentClick);
             // 
-            // button1
+            // btn_Tongtien
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(734, 448);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(162, 65);
-            this.button1.TabIndex = 80;
-            this.button1.Text = "Tổng tiền";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_Tongtien.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btn_Tongtien.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_Tongtien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Tongtien.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Tongtien.ForeColor = System.Drawing.Color.White;
+            this.btn_Tongtien.Location = new System.Drawing.Point(734, 448);
+            this.btn_Tongtien.Name = "btn_Tongtien";
+            this.btn_Tongtien.Size = new System.Drawing.Size(162, 65);
+            this.btn_Tongtien.TabIndex = 80;
+            this.btn_Tongtien.Text = "Tổng tiền";
+            this.btn_Tongtien.UseVisualStyleBackColor = false;
+            this.btn_Tongtien.Click += new System.EventHandler(this.btn_Tongtien_Click);
             // 
-            // button2
+            // btn_Back
             // 
-            this.button2.Location = new System.Drawing.Point(13, 13);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(127, 50);
-            this.button2.TabIndex = 81;
-            this.button2.Text = "btn_back";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btn_Back.AutoSize = true;
+            this.btn_Back.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btn_Back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Back.ForeColor = System.Drawing.Color.White;
+            this.btn_Back.Location = new System.Drawing.Point(13, 13);
+            this.btn_Back.Name = "btn_Back";
+            this.btn_Back.Size = new System.Drawing.Size(76, 43);
+            this.btn_Back.TabIndex = 81;
+            this.btn_Back.Text = "Back";
+            this.btn_Back.UseVisualStyleBackColor = false;
+            this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
             // 
             // Order
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1510, 614);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_Back);
+            this.Controls.Add(this.btn_Tongtien);
             this.Controls.Add(this.gridLoadTopping);
             this.Controls.Add(this.gridLoadThucUong);
-            this.Controls.Add(this.lbMaCTHD);
             this.Controls.Add(this.gridAnCTHD);
             this.Controls.Add(this.gridAnHD);
             this.Controls.Add(this.label10);
@@ -579,10 +573,9 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DataGridView gridAnHD;
         private System.Windows.Forms.DataGridView gridAnCTHD;
-        private System.Windows.Forms.Label lbMaCTHD;
         private System.Windows.Forms.DataGridView gridLoadThucUong;
         private System.Windows.Forms.DataGridView gridLoadTopping;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_Tongtien;
+        private System.Windows.Forms.Button btn_Back;
     }
 }

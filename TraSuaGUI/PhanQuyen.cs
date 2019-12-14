@@ -92,12 +92,32 @@ namespace BoubleMilkTea
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_Back_Click(object sender, EventArgs e)
         {
             TuyChon tuyChon = new TuyChon();
             this.Hide();
             this.Close();
             tuyChon.Show();
+        }
+
+        private void btn_Xoa_Click(object sender, EventArgs e)
+        {
+            int currentRowIndex = dgv_DsachNhanVien.CurrentCellAddress.Y;
+            if (-1 < currentRowIndex && currentRowIndex < dgv_DsachNhanVien.RowCount)
+            {
+                nvDTO = (NhanVienDTO)dgv_DsachNhanVien.Rows[currentRowIndex].DataBoundItem;
+                if (nvDTO != null)
+                {
+                    bool kq = nvBUS.Xoa(nvDTO);
+                    if (kq == true)
+                    {
+                        LoadNV();
+                        MessageBox.Show("Xóa nhân viên thành công");
+                    }
+                    else
+                        MessageBox.Show("Xóa nhân viên thất bại");
+                }
+            }
         }
     }
 }

@@ -76,7 +76,7 @@
             this.btn_DangNhap.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_DangNhap.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btn_DangNhap.Location = new System.Drawing.Point(169, 190);
-            this.btn_DangNhap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_DangNhap.Margin = new System.Windows.Forms.Padding(4);
             this.btn_DangNhap.Name = "btn_DangNhap";
             this.btn_DangNhap.Size = new System.Drawing.Size(132, 50);
             this.btn_DangNhap.TabIndex = 5;
@@ -87,20 +87,20 @@
             // tb_TenTaiKhoan
             // 
             this.tb_TenTaiKhoan.Location = new System.Drawing.Point(221, 70);
-            this.tb_TenTaiKhoan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_TenTaiKhoan.Margin = new System.Windows.Forms.Padding(4);
             this.tb_TenTaiKhoan.Name = "tb_TenTaiKhoan";
             this.tb_TenTaiKhoan.Size = new System.Drawing.Size(173, 22);
             this.tb_TenTaiKhoan.TabIndex = 6;
-            this.tb_TenTaiKhoan.Text = "taikhoan";
+            this.tb_TenTaiKhoan.Text = "admin";
             // 
             // tb_MatKhau
             // 
             this.tb_MatKhau.Location = new System.Drawing.Point(221, 122);
-            this.tb_MatKhau.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_MatKhau.Margin = new System.Windows.Forms.Padding(4);
             this.tb_MatKhau.Name = "tb_MatKhau";
             this.tb_MatKhau.Size = new System.Drawing.Size(173, 22);
             this.tb_MatKhau.TabIndex = 7;
-            this.tb_MatKhau.Text = "123";
+            this.tb_MatKhau.Text = "1";
             // 
             // DangNhap
             // 
@@ -114,7 +114,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DangNhap";
             this.Text = "Đăng nhập";
             this.ResumeLayout(false);

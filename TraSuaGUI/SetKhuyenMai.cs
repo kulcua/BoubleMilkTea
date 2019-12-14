@@ -113,12 +113,32 @@ namespace BoubleMilkTea
             myCurrencyManager.Refresh();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_Back_Click(object sender, EventArgs e)
         {
             TuyChon tuyChon = new TuyChon();
             this.Hide();
             this.Close();
             tuyChon.Show();
+        }
+
+        private void btn_Xoa_Click(object sender, EventArgs e)
+        {
+            int currentRowIndex = dgv_KM.CurrentCellAddress.Y;
+            if (-1 < currentRowIndex && currentRowIndex < dgv_KM.RowCount)
+            {
+                kmDTO = (KhuyenMaiDTO)dgv_KM.Rows[currentRowIndex].DataBoundItem;
+                if (kmDTO != null)
+                {
+                    bool kq = kmBUS.Xoa(kmDTO);
+                    if (kq == true)
+                    {
+                        loadKM();
+                        MessageBox.Show("Xóa khuyến mãi thành công");
+                    }
+                    else
+                        MessageBox.Show("Xóa khuyến mãi thất bại");
+                }
+            }
         }
     }
 }

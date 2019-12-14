@@ -35,5 +35,12 @@ namespace TraSuaBUS
             bool kq = xl.Command(query);
             return kq;
         }
+
+        public bool Xoa(KhuyenMaiDTO kmDTO)
+        {
+            string query = "  delete from KHUYENMAI where MAKM='" + kmDTO.Makm + "'";
+            bool kq=xl.Command(query);
+            return kq;
+        }
     }
 }

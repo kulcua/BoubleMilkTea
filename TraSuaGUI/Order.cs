@@ -248,7 +248,7 @@ namespace BoubleMilkTea
 
             DataGridViewTextBoxColumn clTen = new DataGridViewTextBoxColumn();
             clTen.Name = "Ten";
-            clTen.HeaderText = "Tên Thức Uống";
+            clTen.HeaderText = "Tên Topping";
             clTen.DataPropertyName = "tenTopping";
             gridLoadTopping.Columns.Add(clTen);
 
@@ -346,7 +346,7 @@ namespace BoubleMilkTea
             clMaHD.DataPropertyName = "maCTHD"; //kiểu dữ liệu nằm ở lớp DTO
             gridAnCTHD.Columns.Add(clMaHD);
 
-            lbMaCTHD.Text = Convert.ToString(gridAnCTHD.Rows[0].Cells["maCTHD"].Value);
+            //lbMaCTHD.Text = Convert.ToString(gridAnCTHD.Rows[0].Cells["maCTHD"].Value);
 
         }
 
@@ -385,7 +385,7 @@ namespace BoubleMilkTea
             return tongTien;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_Tongtien_Click(object sender, EventArgs e)
         {
 
             if (tbTienNhan.Text == "")
@@ -435,7 +435,7 @@ namespace BoubleMilkTea
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btn_Back_Click(object sender, EventArgs e)
         {
             TuyChon tuyChon = new TuyChon();
             this.Hide();
