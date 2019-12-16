@@ -18,6 +18,7 @@ namespace BoubleMilkTea
         {
             InitializeComponent();
             loadListTS();
+            loadKM();
         }
 
         private ThucUongBUS TUbus = new ThucUongBUS();
@@ -42,7 +43,7 @@ namespace BoubleMilkTea
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
-            kmDTO.Tenkm = tb_MaKM.Text;
+            kmDTO.Tenkm = tb_TenKM.Text;
             kmDTO.TgBD = dt_batdau.Value;
             kmDTO.TgKT = dt_KetThuc.Value;
             kmDTO.Mucgiamgia = int.Parse(tb_MucGiamGia.Text.ToString());
@@ -61,14 +62,14 @@ namespace BoubleMilkTea
 
         private void loadKM()
         {
-            SetKhuyenMai km = new SetKhuyenMai();
+            //SetKhuyenMai km = new SetKhuyenMai();
             List<KhuyenMaiDTO> listKM = kmBUS.select();
-            if (listKM == null)
-            {
-                DialogResult kq = MessageBox.Show("Lỗi", "Kiểm tra lại kết nối  mạng", MessageBoxButtons.YesNo);
-                if (kq == DialogResult.Yes)
-                    km.Refresh();
-            }
+            //if (listKM == null)
+            //{
+            //    DialogResult kq = MessageBox.Show("Lỗi", "Kiểm tra lại kết nối  mạng", MessageBoxButtons.YesNo);
+            //    if (kq == DialogResult.Yes)
+            //        km.Refresh();
+            //}
 
             dgv_KM.Columns.Clear();
             dgv_KM.Columns.Clear();
@@ -140,5 +141,6 @@ namespace BoubleMilkTea
                 }
             }
         }
+
     }
 }

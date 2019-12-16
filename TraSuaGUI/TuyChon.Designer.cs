@@ -71,8 +71,9 @@
             this.btn_DoiMK.Name = "btn_DoiMK";
             this.btn_DoiMK.Size = new System.Drawing.Size(230, 136);
             this.btn_DoiMK.TabIndex = 20;
-            this.btn_DoiMK.Text = "Đổi mật khẩu";
+            this.btn_DoiMK.Text = "Đăng xuất";
             this.btn_DoiMK.UseVisualStyleBackColor = false;
+            this.btn_DoiMK.Click += new System.EventHandler(this.btn_DoiMK_Click);
             // 
             // btn_QuanLyKho
             // 

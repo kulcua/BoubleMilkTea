@@ -16,7 +16,9 @@ namespace BoubleMilkTea
     {
         public PhanQuyen()
         {
+            
             InitializeComponent();
+            LoadNV();
         }
 
         private NhanVienDTO nvDTO = new NhanVienDTO();
@@ -44,14 +46,15 @@ namespace BoubleMilkTea
         private void LoadNV()
         {
 
-            PhanQuyen phanQuyen = new PhanQuyen();
+            //PhanQuyen phanQuyen = new PhanQuyen();
             List<NhanVienDTO> listNV = nvBUS.select();
-            if (listNV == null)
-            {
-                DialogResult kq = MessageBox.Show("Lỗi", "Kiểm tra lại kết nối  mạng", MessageBoxButtons.YesNo);
-                if (kq == DialogResult.Yes)
-                    phanQuyen.Refresh();
-            }
+            //if (listNV == null)
+            //{
+            //    DialogResult kq = MessageBox.Show("Lỗi", "Kiểm tra lại kết nối  mạng", MessageBoxButtons.YesNo);
+            //    if (kq == DialogResult.Yes)
+            //        phanQuyen.Refresh();
+            //}
+
 
             dgv_DsachNhanVien.Columns.Clear();
             dgv_DsachNhanVien.Columns.Clear();
@@ -98,6 +101,39 @@ namespace BoubleMilkTea
             this.Hide();
             this.Close();
             tuyChon.Show();
+        }
+        private void Load_dgvKM()
+        {
+            List<NhanVienDTO> listNV = nvBUS.select();
+            dgv_DsachNhanVien.DataSource = listNV;
+            DataGridViewTextBoxColumn clMaNV = new DataGridViewTextBoxColumn();
+            clMaNV.Name = "MaNV";
+            clMaNV.HeaderText = "Mã Nhân Viên";
+            clMaNV.DataPropertyName = "Manv";
+            dgv_DsachNhanVien.Columns.Add(clMaNV);
+
+            DataGridViewTextBoxColumn clTenNV = new DataGridViewTextBoxColumn();
+            clTenNV.Name = "TenNV";
+            clTenNV.HeaderText = "Tên Nhân Viên";
+            clTenNV.DataPropertyName = "Tennv";
+            dgv_DsachNhanVien.Columns.Add(clTenNV);
+
+            DataGridViewTextBoxColumn clChucVu = new DataGridViewTextBoxColumn();
+            clChucVu.Name = "ChucVu";
+            clChucVu.HeaderText = "Chức Vụ";
+            clChucVu.DataPropertyName = "Chucvu";
+            dgv_DsachNhanVien.Columns.Add(clChucVu);
+
+            DataGridViewTextBoxColumn clMatKhau = new DataGridViewTextBoxColumn();
+            clMatKhau.Name = "MatKhau";
+            clMatKhau.HeaderText = "Mật Khẩu";
+            clMatKhau.DataPropertyName = "Matkhau";
+            dgv_DsachNhanVien.Columns.Add(clMatKhau);
+
+
+            CurrencyManager myCurrencyManager = (CurrencyManager)this.BindingContext[dgv_DsachNhanVien.DataSource];
+            myCurrencyManager.Refresh();
+
         }
 
         private void btn_Xoa_Click(object sender, EventArgs e)

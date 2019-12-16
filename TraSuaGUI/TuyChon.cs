@@ -51,5 +51,13 @@ namespace BoubleMilkTea
             this.Hide();
             setKhuyenMai.Show();
         }
+
+        private void btn_DoiMK_Click(object sender, EventArgs e)
+        {
+            DangNhap dangNhap = new DangNhap();
+            this.Hide();
+            this.Close();
+            dangNhap.Show();
+        }
     }
 }

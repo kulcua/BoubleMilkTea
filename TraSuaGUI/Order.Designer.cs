@@ -49,7 +49,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.lbTienThoi = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.tbTienNhan = new System.Windows.Forms.TextBox();
             this.btn_ThemThucUong = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -64,6 +63,7 @@
             this.gridLoadTopping = new System.Windows.Forms.DataGridView();
             this.btn_Tongtien = new System.Windows.Forms.Button();
             this.btn_Back = new System.Windows.Forms.Button();
+            this.btn_TienThoi = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridThucAn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridTopping)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridAnHD)).BeginInit();
@@ -220,7 +220,7 @@
             this.label.AutoSize = true;
             this.label.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label.Location = new System.Drawing.Point(358, 81);
+            this.label.Location = new System.Drawing.Point(493, 81);
             this.label.Name = "label";
             this.label.Size = new System.Drawing.Size(135, 24);
             this.label.TabIndex = 37;
@@ -231,7 +231,7 @@
             this.tbMaNhanVien.AutoSize = true;
             this.tbMaNhanVien.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbMaNhanVien.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.tbMaNhanVien.Location = new System.Drawing.Point(519, 81);
+            this.tbMaNhanVien.Location = new System.Drawing.Point(654, 81);
             this.tbMaNhanVien.Name = "tbMaNhanVien";
             this.tbMaNhanVien.Size = new System.Drawing.Size(20, 24);
             this.tbMaNhanVien.TabIndex = 58;
@@ -307,17 +307,6 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(2, 31);
             this.label7.TabIndex = 65;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label8.Location = new System.Drawing.Point(728, 524);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(172, 29);
-            this.label8.TabIndex = 64;
-            this.label8.Text = "TIỀN THỐI LẠI";
             // 
             // tbTienNhan
             // 
@@ -461,9 +450,9 @@
             this.btn_Tongtien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Tongtien.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Tongtien.ForeColor = System.Drawing.Color.White;
-            this.btn_Tongtien.Location = new System.Drawing.Point(734, 448);
+            this.btn_Tongtien.Location = new System.Drawing.Point(734, 458);
             this.btn_Tongtien.Name = "btn_Tongtien";
-            this.btn_Tongtien.Size = new System.Drawing.Size(162, 65);
+            this.btn_Tongtien.Size = new System.Drawing.Size(162, 45);
             this.btn_Tongtien.TabIndex = 80;
             this.btn_Tongtien.Text = "Tổng tiền";
             this.btn_Tongtien.UseVisualStyleBackColor = false;
@@ -484,11 +473,28 @@
             this.btn_Back.UseVisualStyleBackColor = false;
             this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
             // 
+            // btn_TienThoi
+            // 
+            this.btn_TienThoi.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btn_TienThoi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_TienThoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_TienThoi.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_TienThoi.ForeColor = System.Drawing.Color.White;
+            this.btn_TienThoi.Location = new System.Drawing.Point(734, 513);
+            this.btn_TienThoi.Name = "btn_TienThoi";
+            this.btn_TienThoi.Size = new System.Drawing.Size(162, 45);
+            this.btn_TienThoi.TabIndex = 82;
+            this.btn_TienThoi.Text = "Tiền Thối Lại";
+            this.btn_TienThoi.UseVisualStyleBackColor = false;
+            this.btn_TienThoi.Click += new System.EventHandler(this.btn_TienThoi_Click);
+            // 
             // Order
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(249)))), ((int)(((byte)(251)))));
             this.ClientSize = new System.Drawing.Size(1510, 614);
+            this.Controls.Add(this.btn_TienThoi);
             this.Controls.Add(this.btn_Back);
             this.Controls.Add(this.btn_Tongtien);
             this.Controls.Add(this.gridLoadTopping);
@@ -505,7 +511,6 @@
             this.Controls.Add(this.tbTienNhan);
             this.Controls.Add(this.lbTienThoi);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lbTongTien);
@@ -562,7 +567,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lbTienThoi;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox tbTienNhan;
         private System.Windows.Forms.Button btn_ThemThucUong;
         private System.Windows.Forms.Label label1;
@@ -577,5 +581,6 @@
         private System.Windows.Forms.DataGridView gridLoadTopping;
         private System.Windows.Forms.Button btn_Tongtien;
         private System.Windows.Forms.Button btn_Back;
+        private System.Windows.Forms.Button btn_TienThoi;
     }
 }

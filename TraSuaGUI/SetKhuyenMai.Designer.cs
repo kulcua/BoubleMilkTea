@@ -41,8 +41,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.tb_MucGiamGia = new System.Windows.Forms.TextBox();
             this.cb_LoaiGiamGia = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.tb_MaKM = new System.Windows.Forms.TextBox();
             this.dgv_KM = new System.Windows.Forms.DataGridView();
             this.btn_Back = new System.Windows.Forms.Button();
             this.btn_Xoa = new System.Windows.Forms.Button();
@@ -53,7 +51,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(147, 130);
+            this.label1.Location = new System.Drawing.Point(144, 101);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(163, 24);
@@ -64,7 +62,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(147, 170);
+            this.label2.Location = new System.Drawing.Point(144, 141);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(165, 24);
@@ -74,7 +72,7 @@
             // dt_batdau
             // 
             this.dt_batdau.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dt_batdau.Location = new System.Drawing.Point(387, 130);
+            this.dt_batdau.Location = new System.Drawing.Point(384, 101);
             this.dt_batdau.Margin = new System.Windows.Forms.Padding(4);
             this.dt_batdau.Name = "dt_batdau";
             this.dt_batdau.Size = new System.Drawing.Size(327, 30);
@@ -83,7 +81,7 @@
             // dt_KetThuc
             // 
             this.dt_KetThuc.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dt_KetThuc.Location = new System.Drawing.Point(387, 170);
+            this.dt_KetThuc.Location = new System.Drawing.Point(384, 141);
             this.dt_KetThuc.Margin = new System.Windows.Forms.Padding(4);
             this.dt_KetThuc.Name = "dt_KetThuc";
             this.dt_KetThuc.Size = new System.Drawing.Size(327, 30);
@@ -93,7 +91,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(145, 217);
+            this.label4.Location = new System.Drawing.Point(142, 188);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(191, 24);
@@ -104,7 +102,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(147, 91);
+            this.label3.Location = new System.Drawing.Point(144, 62);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(146, 24);
@@ -114,7 +112,7 @@
             // tb_TenKM
             // 
             this.tb_TenKM.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_TenKM.Location = new System.Drawing.Point(387, 91);
+            this.tb_TenKM.Location = new System.Drawing.Point(384, 62);
             this.tb_TenKM.Margin = new System.Windows.Forms.Padding(4);
             this.tb_TenKM.Name = "tb_TenKM";
             this.tb_TenKM.Size = new System.Drawing.Size(327, 32);
@@ -125,7 +123,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(144, 470);
+            this.label5.Location = new System.Drawing.Point(141, 441);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(203, 24);
@@ -138,7 +136,7 @@
             this.btn_Them.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Them.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Them.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_Them.Location = new System.Drawing.Point(821, 412);
+            this.btn_Them.Location = new System.Drawing.Point(818, 383);
             this.btn_Them.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Them.Name = "btn_Them";
             this.btn_Them.Size = new System.Drawing.Size(40, 37);
@@ -151,9 +149,7 @@
             // checkbox_ThucUong
             // 
             this.checkbox_ThucUong.FormattingEnabled = true;
-            this.checkbox_ThucUong.Items.AddRange(new object[] {
-            "sadsadadasdsa"});
-            this.checkbox_ThucUong.Location = new System.Drawing.Point(388, 217);
+            this.checkbox_ThucUong.Location = new System.Drawing.Point(385, 188);
             this.checkbox_ThucUong.Margin = new System.Windows.Forms.Padding(4);
             this.checkbox_ThucUong.Name = "checkbox_ThucUong";
             this.checkbox_ThucUong.Size = new System.Drawing.Size(473, 174);
@@ -163,7 +159,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(145, 426);
+            this.label6.Location = new System.Drawing.Point(142, 397);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(132, 24);
@@ -173,7 +169,7 @@
             // tb_MucGiamGia
             // 
             this.tb_MucGiamGia.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_MucGiamGia.Location = new System.Drawing.Point(387, 416);
+            this.tb_MucGiamGia.Location = new System.Drawing.Point(384, 387);
             this.tb_MucGiamGia.Margin = new System.Windows.Forms.Padding(4);
             this.tb_MucGiamGia.Name = "tb_MucGiamGia";
             this.tb_MucGiamGia.Size = new System.Drawing.Size(269, 32);
@@ -187,38 +183,16 @@
             this.cb_LoaiGiamGia.Items.AddRange(new object[] {
             "%",
             "K"});
-            this.cb_LoaiGiamGia.Location = new System.Drawing.Point(665, 416);
+            this.cb_LoaiGiamGia.Location = new System.Drawing.Point(662, 387);
             this.cb_LoaiGiamGia.Margin = new System.Windows.Forms.Padding(4);
             this.cb_LoaiGiamGia.Name = "cb_LoaiGiamGia";
             this.cb_LoaiGiamGia.Size = new System.Drawing.Size(85, 32);
             this.cb_LoaiGiamGia.TabIndex = 16;
-            this.cb_LoaiGiamGia.Text = "% or k";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(147, 50);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(144, 24);
-            this.label7.TabIndex = 17;
-            this.label7.Text = "Mã khuyến mãi:";
-            // 
-            // tb_MaKM
-            // 
-            this.tb_MaKM.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_MaKM.Location = new System.Drawing.Point(387, 50);
-            this.tb_MaKM.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_MaKM.Name = "tb_MaKM";
-            this.tb_MaKM.Size = new System.Drawing.Size(327, 32);
-            this.tb_MaKM.TabIndex = 18;
-            this.tb_MaKM.Text = "NOEL2019";
             // 
             // dgv_KM
             // 
             this.dgv_KM.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_KM.Location = new System.Drawing.Point(151, 511);
+            this.dgv_KM.Location = new System.Drawing.Point(148, 482);
             this.dgv_KM.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_KM.Name = "dgv_KM";
             this.dgv_KM.RowHeadersWidth = 51;
@@ -245,7 +219,7 @@
             this.btn_Xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Xoa.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Xoa.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_Xoa.Location = new System.Drawing.Point(891, 411);
+            this.btn_Xoa.Location = new System.Drawing.Point(888, 382);
             this.btn_Xoa.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Xoa.Name = "btn_Xoa";
             this.btn_Xoa.Size = new System.Drawing.Size(40, 37);
@@ -263,8 +237,6 @@
             this.Controls.Add(this.btn_Xoa);
             this.Controls.Add(this.btn_Back);
             this.Controls.Add(this.dgv_KM);
-            this.Controls.Add(this.tb_MaKM);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.cb_LoaiGiamGia);
             this.Controls.Add(this.tb_MucGiamGia);
             this.Controls.Add(this.label6);
@@ -302,8 +274,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tb_MucGiamGia;
         private System.Windows.Forms.ComboBox cb_LoaiGiamGia;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox tb_MaKM;
         private System.Windows.Forms.DataGridView dgv_KM;
         private System.Windows.Forms.Button btn_Back;
         private System.Windows.Forms.Button btn_Xoa;

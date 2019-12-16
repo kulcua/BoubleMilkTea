@@ -388,20 +388,20 @@ namespace BoubleMilkTea
         private void btn_Tongtien_Click(object sender, EventArgs e)
         {
 
-            if (tbTienNhan.Text == "")
-            {
-                MessageBox.Show("Vui lòng nhập số tiền nhận vào ", "Lỗi");
-            }
-            else
+            //if (tbTienNhan.Text == "")
+            //{
+            //    MessageBox.Show("Vui lòng nhập số tiền nhận vào ", "Lỗi");
+            //}
+            //else
             {
                 lbTongTien.Visible = true;
-                lbTienThoi.Visible = true;
+                //lbTienThoi.Visible = true;
                 btn_InHoaDon.Visible = true;
                 float tongTien = TinhTongTien();
-                float tienNhan = float.Parse(tbTienNhan.Text);
-                float tienThoi = tienNhan - tongTien ;
+                //float tienNhan = float.Parse(tbTienNhan.Text);
+                //float tienThoi = tienNhan - tongTien ;
                 lbTongTien.Text = Convert.ToString(tongTien);
-                lbTienThoi.Text = Convert.ToString(tienThoi);
+                //lbTienThoi.Text = Convert.ToString(tienThoi);
             }
 
         }
@@ -425,7 +425,7 @@ namespace BoubleMilkTea
             hoaDonDTO.tongTien = float.Parse(lbTongTien.Text);
             hoaDonDTO.maHoaDon = int.Parse(lbMaHD.Text);
             hoaDonBUS.updateTongTien(hoaDonDTO);
-            DialogResult kq = MessageBox.Show("Thanh toan thanh cong", "THÔNG BÁO", MessageBoxButtons.OK);
+            DialogResult kq = MessageBox.Show("Thanh toán thành công", "THÔNG BÁO", MessageBoxButtons.OK);
             if(kq == DialogResult.OK)
             {
                 this.Controls.Clear();
@@ -441,6 +441,25 @@ namespace BoubleMilkTea
             this.Hide();
             this.Close();
             tuyChon.Show();
+        }
+
+        private void btn_TienThoi_Click(object sender, EventArgs e)
+        {
+            if (tbTienNhan.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập số tiền nhận vào ", "Lỗi");
+            }
+            else
+            {
+                //lbTongTien.Visible = true;
+                lbTienThoi.Visible = true;
+                //btn_InHoaDon.Visible = true;
+                float tongTien = TinhTongTien();
+                float tienNhan = float.Parse(tbTienNhan.Text);
+                float tienThoi = tienNhan - tongTien;
+                //lbTongTien.Text = Convert.ToString(tongTien);
+                lbTienThoi.Text = Convert.ToString(tienThoi);
+            }
         }
     }
 }
